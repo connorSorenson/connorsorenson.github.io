@@ -3,7 +3,6 @@ layout: default
 title: Home
 ---
 
-<div class="page-container">
 
 # Connor Sorenson
 
@@ -17,4 +16,3 @@ This site contains documentation and research covering offensive security, defen
 - [Blog](/blog/)
 - [About](/about/)
 
-</div>
