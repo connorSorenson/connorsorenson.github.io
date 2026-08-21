@@ -96,9 +96,26 @@ a {
     }
 
     .page-container h2 {
-        margin-top: 45px;
+        margin-top: 50px;
+        padding-bottom: 8px;
+        border-bottom: 1px solid #262a31;
         color: #ffffff;
     }
+
+    .page-container h3 {
+        margin-top: 28px;
+        margin-bottom: 5px;
+        color: #ffffff;
+    }
+
+    .page-container ul {
+        padding-left: 22px;
+    }
+
+    .page-container li {
+        margin: 6px 0;
+    }
+
 
 
 /* ========================================
