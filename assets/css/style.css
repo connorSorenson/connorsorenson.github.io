@@ -1,0 +1,332 @@
+/* ========================================
+   Base
+======================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background: #0d0f12;
+    color: #d8dce3;
+    font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    line-height: 1.7;
+}
+
+a {
+    color: #9bbcff;
+    text-decoration: none;
+}
+
+    a:hover {
+        color: #ffffff;
+    }
+
+.main-content {
+    min-height: calc(100vh - 64px);
+}
+
+
+/* ========================================
+   Header
+======================================== */
+
+.site-header {
+    height: 64px;
+    background: #101216;
+    border-bottom: 1px solid #262a31;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-inner {
+    max-width: 1400px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 28px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.site-brand {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.top-nav {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+    .top-nav a {
+        color: #aeb4bf;
+        font-size: 15px;
+        font-weight: 500;
+    }
+
+        .top-nav a:hover {
+            color: #ffffff;
+        }
+
+
+/* ========================================
+   Standard pages
+======================================== */
+
+.page-container {
+    width: min(100% - 48px, 1000px);
+    margin: 0 auto;
+    padding: 80px 0;
+}
+
+    .page-container h1 {
+        margin-top: 0;
+        color: #ffffff;
+        font-size: 46px;
+        line-height: 1.2;
+    }
+
+    .page-container h2 {
+        margin-top: 45px;
+        color: #ffffff;
+    }
+
+
+/* ========================================
+   Docs
+======================================== */
+
+.docs-layout {
+    display: grid;
+    grid-template-columns: 280px minmax(0, 1fr);
+    min-height: calc(100vh - 64px);
+}
+
+
+/* ========================================
+   Docs sidebar
+======================================== */
+
+.docs-sidebar {
+    height: calc(100vh - 64px);
+    position: sticky;
+    top: 64px;
+    overflow-y: auto;
+    padding: 28px 18px;
+    background: #101216;
+    border-right: 1px solid #262a31;
+}
+
+.docs-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.sidebar-main-link {
+    display: block;
+    padding: 9px 12px;
+    margin-bottom: 8px;
+    color: #e3e6eb;
+    border-radius: 6px;
+    font-weight: 500;
+}
+
+    .sidebar-main-link:hover {
+        background: #191c22;
+    }
+
+
+/* ========================================
+   Sidebar sections
+======================================== */
+
+.sidebar-section {
+    width: 100%;
+}
+
+.sidebar-toggle {
+    width: 100%;
+    padding: 9px 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: none;
+    border-radius: 6px;
+    background: transparent;
+    color: #bec3cd;
+    font: inherit;
+    font-weight: 500;
+    cursor: pointer;
+    text-align: left;
+}
+
+    .sidebar-toggle:hover {
+        background: #191c22;
+        color: #ffffff;
+    }
+
+.sidebar-arrow {
+    color: #707783;
+    font-size: 20px;
+    transition: transform 0.15s ease;
+}
+
+.sidebar-section.open .sidebar-arrow {
+    transform: rotate(90deg);
+}
+
+
+/* ========================================
+   Sidebar submenu
+======================================== */
+
+.sidebar-submenu {
+    display: none;
+    padding: 3px 0 6px 18px;
+}
+
+.sidebar-section.open .sidebar-submenu {
+    display: block;
+}
+
+.sidebar-submenu a {
+    display: block;
+    padding: 6px 11px;
+    color: #858c98;
+    font-size: 14px;
+    border-left: 1px solid #30343b;
+}
+
+    .sidebar-submenu a:hover {
+        color: #ffffff;
+        border-left-color: #7fa7ff;
+    }
+
+
+/* ========================================
+   Docs content
+======================================== */
+
+.docs-content {
+    width: min(100%, 920px);
+    padding: 55px 60px 100px;
+}
+
+    .docs-content h1 {
+        margin-top: 0;
+        margin-bottom: 30px;
+        color: #ffffff;
+        font-size: 40px;
+        line-height: 1.2;
+    }
+
+    .docs-content h2 {
+        margin-top: 50px;
+        color: #ffffff;
+        font-size: 28px;
+    }
+
+    .docs-content h3 {
+        margin-top: 35px;
+        color: #ffffff;
+    }
+
+    .docs-content p {
+        color: #c3c7cf;
+    }
+
+
+/* ========================================
+   Code
+======================================== */
+
+code {
+    padding: 2px 6px;
+    background: #171a1f;
+    border: 1px solid #30343b;
+    border-radius: 5px;
+    color: #e2e5e9;
+    font-family: "Cascadia Code", "JetBrains Mono", Consolas, monospace;
+    font-size: 0.9em;
+}
+
+pre {
+    overflow-x: auto;
+    margin: 24px 0;
+    padding: 18px;
+    background: #14171b;
+    border: 1px solid #2d3138;
+    border-radius: 8px;
+}
+
+    pre code {
+        padding: 0;
+        background: transparent;
+        border: none;
+    }
+
+
+/* ========================================
+   Tables
+======================================== */
+
+table {
+    width: 100%;
+    margin: 28px 0;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 10px 14px;
+    border: 1px solid #30343b;
+    text-align: left;
+}
+
+th {
+    background: #171a1f;
+    color: #ffffff;
+}
+
+
+/* ========================================
+   Mobile
+======================================== */
+
+@media (max-width: 800px) {
+
+    .header-inner {
+        padding: 0 18px;
+    }
+
+    .top-nav {
+        gap: 14px;
+        font-size: 14px;
+    }
+
+    .docs-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .docs-sidebar {
+        position: relative;
+        top: 0;
+        height: auto;
+        border-right: none;
+        border-bottom: 1px solid #262a31;
+    }
+
+    .docs-content {
+        padding: 35px 24px 80px;
+    }
+}
