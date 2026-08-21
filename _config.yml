@@ -1,0 +1,11 @@
+title: Connor Sorenson
+description: Cybersecurity notes, research, writeups, and projects
+url: "https://connorsorenson.github.io"
+baseurl: ""
+
+markdown: kramdown
+
+permalink: pretty
+
+exclude:
+  - README.md
