@@ -56,7 +56,7 @@ The site also features a leaderboard where you can see how many others where abl
 
 <div class="doc-link-grid">
 
-<a class="doc-link-card" href="/docs/reversing/microcorruption/neworleans/neworleans.md">
+<a class="doc-link-card" href="/docs/reversing/microcorruption/neworleans/">
     <strong>New Orleans</strong>
     <span>Microcorruption challenge writeup.</span>
 </a>

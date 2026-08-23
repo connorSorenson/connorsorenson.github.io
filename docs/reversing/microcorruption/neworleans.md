@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: New Orleans
-permalink: /docs/reversing/microcorruption/neworleans
+permalink: /docs/reversing/microcorruption/neworleans/
 ---
 
 To begin the CTF, I completed the tutorial level to familiarize myself with the web-based debugger, including the Disassembly and Live Memory Dump windows. I also reviewed the LockitPro documentation covering basic MSP430 assembly and debugger functionality.
@@ -83,7 +83,7 @@ Essentially, leading up to the `cmp.b` instruction, the function adds `r14` to `
 
 A pseudocode version in C would look like 
 
-```
+```c
 int check_password(char *input)
 {
     for (int i = 0; i < 8; i++)
