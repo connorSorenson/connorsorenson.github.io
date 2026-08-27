@@ -57,7 +57,7 @@ Cybersecurity professional focused on offensive security, adversary emulation, r
 
 ***
 
-<table data-view="cards"><thead><tr><th align="center"></th><th align="center"></th><th data-hidden data-card-cover data-type="image">Cover image</th></tr></thead><tbody><tr><td align="center">CPTS</td><td align="center">Hack The Box Certified Penetration Testing Specialist</td><td><a href=".gitbook/assets/cpts.jpg">cpts.jpg</a></td></tr><tr><td align="center">GRTP</td><td align="center">GIAC Red Team Professional</td><td><a href=".gitbook/assets/grtp.jpg">grtp.jpg</a></td></tr><tr><td align="center">GPEN</td><td align="center">GIAC Penetration Tester</td><td><a href=".gitbook/assets/gpen.jpg">gpen.jpg</a></td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th align="center"></th><th align="center"></th><th data-hidden data-card-cover data-type="image">Cover image</th></tr></thead><tbody><tr><td align="center">CPTS</td><td align="center">Hack The Box Certified Penetration Testing Specialist</td><td><a href=".gitbook/assets/cpts.jpg">cpts.jpg</a></td></tr><tr><td align="center">GRTP</td><td align="center">GIAC Red Team Professional</td><td><a href=".gitbook/assets/grtp.jpg">grtp.jpg</a></td></tr><tr><td align="center">GPEN</td><td align="center">GIAC Penetration Tester</td><td><a href=".gitbook/assets/gpen.jpg">gpen.jpg</a></td></tr><tr><td align="center">GCIH</td><td align="center">GIAC Certified Incident Handler</td><td><a href=".gitbook/assets/gcih.jpg">gcih.jpg</a></td></tr><tr><td align="center">CCNA</td><td align="center">Cisco Certified Network Associate</td><td><a href=".gitbook/assets/ccna.jpg">ccna.jpg</a></td></tr><tr><td align="center">Sec+</td><td align="center">CompTIA Security+</td><td><a href=".gitbook/assets/secplus.jpg">secplus.jpg</a></td></tr><tr><td align="center">GIAC Advisory Board Member</td><td align="center"></td><td><a href=".gitbook/assets/giac_advisory_board.jpg">giac_advisory_board.jpg</a></td></tr></tbody></table>
 
 ### Education
 
@@ -65,25 +65,7 @@ Cybersecurity professional focused on offensive security, adversary emulation, r
 
 I’m pursuing an M.S. in Cyber Security Engineering. I plan to continue into post-graduate study next year.
 
-{% columns %}
-{% column %}
-#### M.S. Cyber Security Engineering
-
-**University of San Diego**
-
-Projected graduation: May 2027\
-GPA: 4.0
-{% endcolumn %}
-
-{% column %}
-#### B.S. Computer Science — Cyber Security
-
-**University of Texas at San Antonio**
-
-Graduated _cum laude_, May 2024\
-GPA: 3.6
-{% endcolumn %}
-{% endcolumns %}
+<table data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-cover data-type="image">Cover image</th></tr></thead><tbody><tr><td><h4>M.S. Cyber Security Engineering</h4></td><td><p><strong>University of San Diego</strong></p><p>Projected graduation: May 2027<br>GPA: 4.0</p></td><td></td><td data-object-fit="contain"><a href=".gitbook/assets/usd.jpg">usd.jpg</a></td></tr><tr><td><h4>B.S. Computer Science — Cyber Security</h4></td><td><strong>University of Texas at San Antonio</strong></td><td>Graduated <em>cum laude</em>, May 2024<br>GPA: 3.6</td><td data-object-fit="contain"><a href=".gitbook/assets/utsa.jpg">utsa.jpg</a></td></tr></tbody></table>
 
 ### Projects
 
@@ -126,7 +108,6 @@ My hands-on work covers Linux, Windows, network security, SIEM platforms, revers
 
 #### Programming & scripting
 
-* C and C++
-* Python and PowerShell
-* Bash and Java
-* x86/x64 Assembly
+***
+
+{% include ".gitbook/includes/card-in-scroll-block.md" %}
