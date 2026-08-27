@@ -48,8 +48,6 @@ The site also features a leaderboard where you can see how many others where abl
 
 ### Challenge Writeups
 
-**New Orleans** Microcorruption challenge writeup.
-
 {% content-ref url="new-orleans.md" %}
 [new-orleans.md](new-orleans.md)
 {% endcontent-ref %}
