@@ -40,7 +40,11 @@ While there isn't an exact 1 to 1 match between the details of an x86 and an MSP
 
 I'm currently working through documenting my solves for the following challenges shown below. The blue levels have been completed and the orange ones are the next recommended challenges.
 
+<figure><img src="../../../.gitbook/assets/progress-map.png" alt=""><figcaption></figcaption></figure>
+
 The site also features a leaderboard where you can see how many others where able to solve each challenge. I look forward to continuing to solve the remaining levels and making the writeups!
+
+<figure><img src="../../../.gitbook/assets/progress-leaderboard.png" alt=""><figcaption></figcaption></figure>
 
 ### Challenge Writeups
 
