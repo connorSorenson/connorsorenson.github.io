@@ -12,5 +12,6 @@ I'm working through the Microcorruption embedded security CTF and documenting ea
 
 The series focuses on assembly analysis, debugging, memory inspection, and reverse engineering progressively more difficult firmware challenges.
 
-<table data-view="cards"><thead><tr><th></th><th data-type="content-ref"></th></tr></thead><tbody><tr><td>Microcorruption</td><td><a href="docs/reversing/microcorruption/">microcorruption</a></td></tr></tbody></table>
-
+{% content-ref url="docs/reversing/microcorruption/" %}
+[microcorruption](docs/reversing/microcorruption/)
+{% endcontent-ref %}

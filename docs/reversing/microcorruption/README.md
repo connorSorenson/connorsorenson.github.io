@@ -48,8 +48,8 @@ The site also features a leaderboard where you can see how many others where abl
 
 ### Challenge Writeups
 
-{% content-ref url="/broken/pages/onhVGAvamdSCtLTUbyTn" %}
-[Broken link](/broken/pages/onhVGAvamdSCtLTUbyTn)
+{% content-ref url="new-orleans.md" %}
+[new-orleans.md](new-orleans.md)
 {% endcontent-ref %}
 
 ... more coming soon
