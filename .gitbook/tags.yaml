@@ -1,0 +1,24 @@
+- tag: red-team-operations
+  label: Red Team Operations
+  color: red
+- tag: adversary-emulation
+  label: Adversary Emulation
+  color: red
+- tag: reverse-engineering
+  label: Reverse Engineering
+  color: red
+- tag: malware-development
+  label: Malware Development
+  color: red
+- tag: active-directory-security
+  label: Active Directory Security
+  color: blue
+- tag: detection-engineering
+  label: Detection Engineering
+  color: blue
+- tag: windows-internals
+  label: Windows Internals
+  color: blue
+- tag: network-security
+  label: Network Security
+  color: blue
