@@ -1,11 +1,10 @@
 # Table of contents
 
-* [Home](README.md)
+* [Connor Sorenson](README.md)
 * [Blog](blog.md)
 
 ## Docs
 
-* [start-here](docs/start-here.md)
 * [Hack the Box](docs/hack-the-box.md)
 * [Blue Team](docs/blue-team.md)
 * [Red Team](docs/red-team.md)
