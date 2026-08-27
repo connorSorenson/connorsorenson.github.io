@@ -6,7 +6,7 @@ Microcorruption is an embedded security CTF centered around reverse engineering 
 
 This series documents my approach to each challenge, including the reasoning behind the solution, relevant assembly concepts, and the exploitation techniques used along the way.
 
-#### About the CTF
+### About the CTF
 
 The premise of Microcorruption is simple: each challenge represents a secure warehouse protected by a Lockitall electronic lock. Your objective is to identify a vulnerability in the lock's firmware and exploit it to unlock the door.
 
@@ -30,13 +30,13 @@ As the challenges progress, the solutions begin requiring more traditional binar
 
 This gradual progression is one of the things I enjoy most about the CTF. The earlier levels provide enough exposure to the architecture and debugger to prepare you for the more advanced exploitation challenges later on.
 
-#### How do I know I'm ready to try this CTF? Is it beginner friendly?
+### How do I know I'm ready to try this CTF? Is it beginner friendly?
 
 Yes, this CTF in my opinion has challenges for people of all levels. For those unfamiliar with assembly, control flow, or calling conventions, I would first suggest working on those fundamentals. An excellent source I frequently refer back to is from the University of Virginia. [University of Virginia x86 Assembly Guide](https://www.cs.virginia.edu/~evans/cs216/guides/x86.html)
 
 While there isn't an exact 1 to 1 match between the details of an x86 and an MSP430 processor, the foundational concepts are universal and apply to both in the majority of cases. Anyone with general foundational skills in these concepts can attempt this CTF and use the provided resources to build their understanding of the MSP430 processor and the LockitPro hardware and software interfaces.
 
-#### Current Progress
+### Current Progress
 
 I'm currently working through documenting my solves for the following challenges shown below. The blue levels have been completed and the orange ones are the next recommended challenges.
 
