@@ -15,8 +15,8 @@ permalink: /about/
 <h1>About Me</h1>
 
 <p class="about-lead">
-I'm Connor Sorenson, a cybersecurity professional focused on offensive security,
-adversary emulation, reverse engineering, and detection engineering.
+Cybersecurity professional focused on offensive security, adversary emulation,
+reverse engineering, and detection engineering.
 </p>
 
 <div class="about-actions">
@@ -28,15 +28,29 @@ adversary emulation, reverse engineering, and detection engineering.
 
 </div>
 
+## Technical Background
+
+<p>
+I work in cyber operations. My experience includes red team exercises, adversary
+emulation, threat replication, cyber range development, and operator training.
+</p>
+
+<p>
+My hands-on work covers exploitation of Linux and Windows, network security
+testing, detection engineering across SIEM and EDR platforms, reverse engineering,
+offensive tooling, and programming.
+</p>
+
 ## Areas of Interest
 
 <div class="tag-grid">
 <span class="interest-tag">Red Team Operations</span>
 <span class="interest-tag">Adversary Emulation</span>
-<span class="interest-tag">Active Directory Security</span>
+<span class="interest-tag">Active Directory</span>
 <span class="interest-tag">Reverse Engineering</span>
-<span class="interest-tag">Malware Development</span>
+<span class="interest-tag">Malware Dev</span>
 <span class="interest-tag">Detection Engineering</span>
+<span class="interest-tag">EDR Evasion</span>
 <span class="interest-tag">Windows Internals</span>
 <span class="interest-tag">Network Security</span>
 </div>
@@ -124,11 +138,25 @@ adversary emulation, reverse engineering, and detection engineering.
 
 </div>
 
+### Tools
+
+<div class="tag-grid">
+<span class="tech-tag">Burp Suite</span>
+<span class="tech-tag">Cobalt Strike</span>
+<span class="tech-tag">Impacket</span>
+<span class="tech-tag">BloodHound</span>
+<span class="tech-tag">nxc</span>
+<span class="tech-tag">IDA Pro</span>
+<span class="tech-tag">WinDbg</span>
+<span class="tech-tag">Ghidra</span>
+<span class="tech-tag">Elastic</span>
+</div>
+
 ## Education
 
 <p>
-I'm currently pursuing an M.S. in Cyber Security Engineering and plan to continue
-my education in post-grad school next year.
+I’m pursuing an M.S. in Cyber Security Engineering. I plan to continue into
+post-graduate study next year.
 </p>
 
 <div class="card-grid education-grid">
@@ -156,12 +184,12 @@ my education in post-grad school next year.
 <div class="info-card education-card">
 
     <div class="education-info">
-        <h3>B.S. Computer Science - Cyber Security</h3>
+        <h3>B.S. Computer Science — Cyber Security</h3>
 
         <p><strong>University of Texas at San Antonio</strong></p>
 
         <p>
-            Graduated Cum Laude, May 2024<br>
+            Graduated <em>cum laude</em>, May 2024<br>
             GPA: <strong>3.6</strong>
         </p>
     </div>
@@ -182,52 +210,34 @@ my education in post-grad school next year.
 <div class="info-card">
 <h3>Reverse Engineering Decryption Program</h3>
 <p>
-Reverse engineered a custom C++ encryption executable using static and dynamic
-analysis, then implemented a compatible program based on the recovered algorithm.
+Reverse engineered a custom C++ encryption executable. I used static and dynamic
+analysis to determine the custom decryption process, and then implemented a
+compatible encryption program from the recovered algorithm using the opposite
+operations.
 </p>
 </div>
 
 <div class="info-card">
 <h3>SorenSaves</h3>
 <p>
-Developed a personal finance application for expense tracking and investment
-forecasting using C, Java, JavaFX, and MySQL.
+Built a personal finance application for expense tracking and investment
+forecasting. Built with internal file ingestion and data cleaning utilities using
+C, user database storage and forecasting queries using MySQL, and an application
+GUI using Java and JavaFX.
 </p>
 </div>
 
-</div>
-
-## Technical Background
-
-<p>
-I currently work in cyber operations, where my experience includes red team exercises, adversary emulation, 
-threat replication, cyber range development, and operator training.My hands-on experience spans Linux and Windows systems, 
-network security, SIEM platforms, reverse engineering, offensive security tooling, and programming.
-</p>
-
-### Tools
-
-<div class="tag-grid">
-<span class="tech-tag">BloodHound</span>
-<span class="tech-tag">Impacket</span>
-<span class="tech-tag">NetExec</span>
-<span class="tech-tag">Nmap</span>
-<span class="tech-tag">IDA Pro</span>
-<span class="tech-tag">Ghidra</span>
-<span class="tech-tag">WinDbg</span>
-<span class="tech-tag">Burp Suite</span>
-<span class="tech-tag">Cobalt Strike</span>
-<span class="tech-tag">Elastic</span>
 </div>
 
 ### Programming &amp; Scripting
 
 <div class="tag-grid">
-<span class="tech-tag">C</span>
+<span class="tech-tag">C / C#</span>
 <span class="tech-tag">C++</span>
-<span class="tech-tag">Python</span>
-<span class="tech-tag">PowerShell</span>
-<span class="tech-tag">Bash</span>
 <span class="tech-tag">Java</span>
 <span class="tech-tag">x86/x64 Assembly</span>
+<span class="tech-tag">PowerShell</span>
+<span class="tech-tag">16-Bit RISC Assembly</span>
+<span class="tech-tag">Python</span>
+<span class="tech-tag">Bash</span>
 </div>
