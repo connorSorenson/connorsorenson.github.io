@@ -1,5 +1,5 @@
 ---
-title: Card in scroll block
+title: buttons in scroll block
 ---
 
-<table data-column-title-hidden data-view="cards"><thead><tr><th align="center"></th></tr></thead><tbody><tr><td align="center">C / C# / C++</td></tr><tr><td align="center">x64 / x86 Assembly / 16-bit RISC</td></tr><tr><td align="center">Java</td></tr><tr><td align="center">Python</td></tr><tr><td align="center">Powershell</td></tr><tr><td align="center">Bash</td></tr></tbody></table>
+<a class="button primary small">C / C#</a><a class="button secondary small">C++</a><a class="button secondary small">Java</a><a class="button primary small">x64/x86 Assembly</a><a class="button secondary small">Powershell</a><a class="button secondary small">16-Bit RISC Assembly</a><a class="button secondary small">Python</a><a class="button secondary small">SQL</a>
