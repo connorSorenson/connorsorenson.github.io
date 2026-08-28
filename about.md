@@ -31,7 +31,9 @@ tags:
   - network-security
 ---
 
-# About Me
+# About
+
+
 
 {% columns %}
 {% column valign="middle" %}
@@ -51,7 +53,7 @@ Cybersecurity professional focused on offensive security, adversary emulation, r
 
 ***
 
-<table data-card-wrap="false" data-view="cards"><thead><tr><th align="center"></th></tr></thead><tbody><tr><td align="center">Red Team Operations</td></tr><tr><td align="center">Adversary Emulation</td></tr><tr><td align="center">Active Directory</td></tr><tr><td align="center">Reverse Engineering</td></tr><tr><td align="center">Malware Development</td></tr><tr><td align="center">Detection Engineering</td></tr><tr><td align="center">Windows Internals</td></tr><tr><td align="center">Network Security</td></tr></tbody></table>
+<h3 align="center"><a class="button primary small">Red Team Operations</a><a class="button secondary small">Adversary Emulation</a><a class="button primary small">Active Directory</a><a class="button primary small">RE</a><a class="button secondary small">Malware Dev</a><a class="button primary small">Detection Engineering</a><a class="button secondary small">EDR Evasion</a><a class="button secondary small">Windows Internals</a><a class="button secondary small">Network Security</a></h3>
 
 ### Certifications
 
@@ -95,19 +97,13 @@ My hands-on work covers Linux, Windows, network security, SIEM platforms, revers
 
 #### Tools
 
-* BloodHound
-* Impacket
-* NetExec
-* Nmap
-* IDA Pro
-* Ghidra
-* WinDbg
-* Burp Suite
-* Cobalt Strike
-* Elastic
+***
+
+<a class="button secondary small">Burp Suite</a><a class="button secondary small">Cobalt Strike</a><a class="button secondary small">Impacket</a><a class="button secondary small">Bloodhound</a><a class="button secondary small">NetExec</a><a class="button secondary medium">IDA Pro</a><a class="button secondary small">WinDbg</a><a class="button secondary medium">Ghidra</a><a class="button secondary small">Elastic</a>
 
 #### Programming & scripting
 
 ***
 
 {% include ".gitbook/includes/card-in-scroll-block.md" %}
+
