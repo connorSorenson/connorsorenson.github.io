@@ -2,7 +2,24 @@
 description: >-
   Cybersecurity professional focused on offensive security, reverse engineering,
   and detection engineering.
-layout: landing
+layout:
+  width: default
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+  metadata:
+    visible: true
+  tags:
+    visible: true
+  actions:
+    visible: false
 ---
 
 # About
@@ -21,6 +38,14 @@ Cybersecurity professional focused on offensive security, adversary emulation, r
 {% endcolumn %}
 {% endcolumns %}
 
+### Technical background
+
+***
+
+I work in cyber operations. My experience includes red team exercises, adversary emulation, threat replication, cyber range development, and operator training.
+
+My hands-on work covers exploitation of Linux and Windows, network security testing, detection engineering across SIEM and EDR platforms, reverse engineering, offensive tooling, and programming.
+
 ### Areas of interest
 
 ***
@@ -33,45 +58,35 @@ Cybersecurity professional focused on offensive security, adversary emulation, r
 
 <table data-view="cards"><thead><tr><th align="center"></th><th align="center"></th><th data-hidden data-card-cover data-type="image">Cover image</th></tr></thead><tbody><tr><td align="center">CPTS</td><td align="center">Hack The Box Certified Penetration Testing Specialist</td><td><a href=".gitbook/assets/cpts.jpg">cpts.jpg</a></td></tr><tr><td align="center">GRTP</td><td align="center">GIAC Red Team Professional</td><td><a href=".gitbook/assets/grtp.jpg">grtp.jpg</a></td></tr><tr><td align="center">GPEN</td><td align="center">GIAC Penetration Tester</td><td><a href=".gitbook/assets/gpen.jpg">gpen.jpg</a></td></tr><tr><td align="center">GCIH</td><td align="center">GIAC Certified Incident Handler</td><td><a href=".gitbook/assets/gcih.jpg">gcih.jpg</a></td></tr><tr><td align="center">CCNA</td><td align="center">Cisco Certified Network Associate</td><td><a href=".gitbook/assets/ccna.jpg">ccna.jpg</a></td></tr><tr><td align="center">Sec+</td><td align="center">CompTIA Security+</td><td><a href=".gitbook/assets/secplus.jpg">secplus.jpg</a></td></tr><tr><td align="center">GIAC Advisory Board Member</td><td align="center"></td><td><a href=".gitbook/assets/giac_advisory_board.jpg">giac_advisory_board.jpg</a></td></tr></tbody></table>
 
+#### Tools
+
+***
+
+<p align="center"><a class="button secondary small">Burp Suite</a><a class="button primary small">Cobalt Strike</a><a class="button secondary small">Impacket</a><a class="button secondary small">Bloodhound</a><a class="button secondary small">NetExec</a><a class="button secondary small">IDA Pro</a><a class="button secondary small">WinDbg</a><a class="button secondary small">Ghidra</a><a class="button secondary small">Elastic</a></p>
+
 ### Education
 
 ***
 
 I’m pursuing an M.S. in Cyber Security Engineering. I plan to continue into post-graduate study next year.
 
-<table data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-cover data-type="image">Cover image</th></tr></thead><tbody><tr><td><h4>M.S. Cyber Security Engineering</h4></td><td><p><strong>University of San Diego</strong></p><p>Projected graduation: May 2027<br>GPA: 4.0</p></td><td></td><td data-object-fit="contain"><a href=".gitbook/assets/usd.jpg">usd.jpg</a></td></tr><tr><td><h4>B.S. Computer Science — Cyber Security</h4></td><td><strong>University of Texas at San Antonio</strong></td><td>Graduated <em>cum laude</em>, May 2024<br>GPA: 3.6</td><td data-object-fit="contain"><a href=".gitbook/assets/utsa.jpg">utsa.jpg</a></td></tr></tbody></table>
+<table data-card-wrap="false" data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-cover data-type="image">Cover image</th></tr></thead><tbody><tr><td><h4>M.S. Cyber Security Engineering</h4></td><td><p><strong>University of San Diego</strong></p><p>Projected graduation: May 2027<br>GPA: 4.0</p></td><td></td><td data-object-fit="contain"><a href=".gitbook/assets/usd.jpg">usd.jpg</a></td></tr><tr><td><h4>B.S. Computer Science — Cyber Security</h4></td><td><strong>University of Texas at San Antonio</strong></td><td>Graduated <em>cum laude</em>, May 2024<br>GPA: 3.6</td><td data-object-fit="contain"><a href=".gitbook/assets/utsa.jpg">utsa.jpg</a></td></tr></tbody></table>
 
 ### Projects
 
 ***
 
-{% columns %}
-{% column %}
-#### Reverse Engineering Decryption Program
+{% hint style="info" icon="lock-keyhole-open" %}
+## Reverse Engineering Decryption Program
 
-Reverse engineered a custom C++ encryption executable. I used static and dynamic analysis. I then implemented a compatible program from the recovered algorithm.
-{% endcolumn %}
+Reverse engineered a custom C++ encryption executable. I used static and dynamic analysis to determine the custom decryption process, and then implemented a compatible encryption program from the recovered algorithm using the opposite operations.
+{% endhint %}
 
-{% column %}
-#### SorenSaves
+{% hint style="info" icon="cash-app" %}
+## SorenSaves
 
-Personal finance application for expense tracking and investment forecasting. Built with C, Java, JavaFX, and MySQL.
-{% endcolumn %}
-{% endcolumns %}
-
-### Technical background
-
-***
-
-I work in cyber operations. My experience includes red team exercises, adversary emulation, threat replication, cyber range development, and operator training.
-
-My hands-on work covers Linux, Windows, network security, SIEM platforms, reverse engineering, offensive tooling, and programming.
-
-#### Tools
-
-***
-
-<p align="center"><a class="button secondary small">Burp Suite</a><a class="button primary small">Cobalt Strike</a><a class="button secondary small">Impacket</a><a class="button secondary small">Bloodhound</a><a class="button secondary small">NetExec</a><a class="button secondary small">IDA Pro</a><a class="button secondary small">WinDbg</a><a class="button secondary small">Ghidra</a><a class="button secondary small">Elastic</a></p>
+Built a personal finance application for expense tracking and investment forecasting. Built with internal file ingestion and data cleaning utilities using C, user database storage and forecasting queries using MySQL, and an application GUI using Java, and JavaFX.
+{% endhint %}
 
 #### Programming & scripting
 
