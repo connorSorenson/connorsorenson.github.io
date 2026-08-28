@@ -33,8 +33,6 @@ tags:
 
 # About
 
-
-
 {% columns %}
 {% column valign="middle" %}
 <figure><img src=".gitbook/assets/apt.png" alt="" width="188"><figcaption></figcaption></figure>
@@ -53,7 +51,7 @@ Cybersecurity professional focused on offensive security, adversary emulation, r
 
 ***
 
-<h3 align="center"><a class="button primary small">Red Team Operations</a><a class="button secondary small">Adversary Emulation</a><a class="button primary small">Active Directory</a><a class="button primary small">RE</a><a class="button secondary small">Malware Dev</a><a class="button primary small">Detection Engineering</a><a class="button secondary small">EDR Evasion</a><a class="button secondary small">Windows Internals</a><a class="button secondary small">Network Security</a></h3>
+<a class="button primary small">Red Team Operations</a><a class="button secondary small">Adversary Emulation</a><a class="button primary small">Active Directory</a><a class="button primary small">RE</a><a class="button secondary small">Malware Dev</a><a class="button primary small">Detection Engineering</a><a class="button secondary small">EDR Evasion</a><a class="button secondary small">Windows Internals</a><a class="button secondary small">Network Security</a>
 
 ### Certifications
 
@@ -106,4 +104,3 @@ My hands-on work covers Linux, Windows, network security, SIEM platforms, revers
 ***
 
 {% include ".gitbook/includes/card-in-scroll-block.md" %}
-
