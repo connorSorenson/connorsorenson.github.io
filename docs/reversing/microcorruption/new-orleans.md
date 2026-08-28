@@ -1,3 +1,24 @@
+---
+layout:
+  width: wide
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: false
+  outline:
+    visible: true
+  pagination:
+    visible: true
+  metadata:
+    visible: true
+  tags:
+    visible: true
+  actions:
+    visible: true
+---
+
 # New Orleans
 
 To begin the CTF, I completed the tutorial level to familiarize myself with the web-based debugger, including the Disassembly and Live Memory Dump windows. I also reviewed the LockitPro documentation covering basic MSP430 assembly and debugger functionality.
