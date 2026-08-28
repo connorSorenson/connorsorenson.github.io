@@ -3,7 +3,7 @@ description: >-
   Cybersecurity professional focused on offensive security, reverse engineering,
   and detection engineering.
 layout:
-  width: default
+  width: wide
   title:
     visible: true
   description:
@@ -13,13 +13,13 @@ layout:
   outline:
     visible: true
   pagination:
-    visible: true
+    visible: false
   metadata:
     visible: true
   tags:
     visible: false
   actions:
-    visible: true
+    visible: false
 tags:
   - red-team-operations
   - adversary-emulation
