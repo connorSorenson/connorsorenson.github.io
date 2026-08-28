@@ -6,17 +6,17 @@ layout:
   description:
     visible: true
   tableOfContents:
-    visible: false
+    visible: true
   outline:
     visible: true
   pagination:
-    visible: true
+    visible: false
   metadata:
     visible: true
   tags:
     visible: true
   actions:
-    visible: true
+    visible: false
 ---
 
 # Microcorruption

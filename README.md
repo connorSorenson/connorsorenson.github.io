@@ -1,8 +1,9 @@
 ---
 description: Welcome!
+layout: landing
 ---
 
-# Connor Sorenson
+# Home
 
 Cybersecurity research, technical notes, writeups, and projects.
 

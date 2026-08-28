@@ -6,7 +6,7 @@ layout:
   description:
     visible: true
   tableOfContents:
-    visible: false
+    visible: true
   outline:
     visible: true
   pagination:
@@ -16,7 +16,7 @@ layout:
   tags:
     visible: true
   actions:
-    visible: true
+    visible: false
 ---
 
 # New Orleans
