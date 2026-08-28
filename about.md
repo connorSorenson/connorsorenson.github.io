@@ -2,6 +2,7 @@
 description: >-
   Cybersecurity professional focused on offensive security, reverse engineering,
   and detection engineering.
+hidden: true
 layout:
   width: default
   title:
