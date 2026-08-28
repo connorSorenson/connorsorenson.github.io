@@ -9,3 +9,4 @@ permalink: pretty
 
 exclude:
   - README.md
+  - archive

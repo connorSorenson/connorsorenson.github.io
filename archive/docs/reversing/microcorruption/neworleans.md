@@ -148,4 +148,3 @@ But by debugging the program and setting a breakpoint after that function sets t
      style="max-width: 100%; height: auto;">
 
 Even if an attacker couldn't observe `0x2400`, static analysis of `create_password` reveals every byte. 
-

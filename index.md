@@ -12,7 +12,6 @@ This site contains documentation and research covering offensive security, defen
 
 ## Explore
 
-- [Documentation](/docs/)
-- [Blog](/blog/)
+- [Documentation](https://connorsorenson.gitbook.io/connorsorenson/docs)
+- [Blog](https://connorsorenson.gitbook.io/connorsorenson/blog)
 - [About](/about/)
-
