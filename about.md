@@ -42,9 +42,9 @@ Cybersecurity professional focused on offensive security, adversary emulation, r
 
 ***
 
-I work in cyber operations. My experience includes red team exercises, adversary emulation, threat replication, cyber range development, and operator training.
+<p align="center">I work in cyber operations. My experience includes red team exercises, adversary emulation, threat replication, cyber range development, and operator training.</p>
 
-My hands-on work covers exploitation of Linux and Windows, network security testing, detection engineering across SIEM and EDR platforms, reverse engineering, offensive tooling, and programming.
+<p align="center">My hands-on work covers exploitation of Linux and Windows, network security testing, detection engineering across SIEM and EDR platforms, reverse engineering, offensive tooling, and programming.</p>
 
 ### Areas of interest
 
@@ -62,7 +62,7 @@ My hands-on work covers exploitation of Linux and Windows, network security test
 
 ***
 
-<p align="center"><a class="button secondary small">Burp Suite</a><a class="button primary small">Cobalt Strike</a><a class="button secondary small">Impacket</a><a class="button secondary small">Bloodhound</a><a class="button secondary small">NetExec</a><a class="button secondary small">IDA Pro</a><a class="button secondary small">WinDbg</a><a class="button secondary small">Ghidra</a><a class="button secondary small">Elastic</a></p>
+<p align="center"><a class="button secondary small">Burp Suite</a><a class="button primary small">Cobalt Strike</a><a class="button secondary small">Impacket</a><a class="button secondary small">Bloodhound</a><a class="button secondary small">nxc</a><a class="button secondary small">IDA Pro</a><a class="button secondary small">WinDbg</a><a class="button secondary small">Ghidra</a><a class="button secondary small">Elastic</a></p>
 
 ### Education
 
