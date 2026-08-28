@@ -1,7 +1,7 @@
 # Table of contents
 
 * [Home](README.md)
-* [About Me](about-me.md)
+* [About](about.md)
 * [Blog](blog.md)
 
 ## Docs
