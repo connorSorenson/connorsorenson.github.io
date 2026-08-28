@@ -2,33 +2,7 @@
 description: >-
   Cybersecurity professional focused on offensive security, reverse engineering,
   and detection engineering.
-layout:
-  width: default
-  title:
-    visible: true
-  description:
-    visible: true
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: false
-  metadata:
-    visible: true
-  tags:
-    visible: false
-  actions:
-    visible: false
-tags:
-  - red-team-operations
-  - adversary-emulation
-  - reverse-engineering
-  - malware-development
-  - active-directory-security
-  - detection-engineering
-  - windows-internals
-  - network-security
+layout: landing
 ---
 
 # About
@@ -51,7 +25,7 @@ Cybersecurity professional focused on offensive security, adversary emulation, r
 
 ***
 
-<a class="button primary small">Red Team Operations</a><a class="button secondary small">Adversary Emulation</a><a class="button primary small">Active Directory</a><a class="button primary small">RE</a><a class="button secondary small">Malware Dev</a><a class="button primary small">Detection Engineering</a><a class="button secondary small">EDR Evasion</a><a class="button secondary small">Windows Internals</a><a class="button secondary small">Network Security</a>
+<p align="center"><a class="button primary small">Red Team Operations</a><a class="button secondary small">Adversary Emulation</a><a class="button primary small">Active Directory</a><a class="button primary small">Reverse Engineering</a><a class="button secondary small">Malware Dev</a><a class="button primary small">Detection Engineering</a><a class="button secondary small">EDR Evasion</a><a class="button secondary small">Windows Internals</a><a class="button secondary small">Network Security</a></p>
 
 ### Certifications
 
@@ -97,7 +71,7 @@ My hands-on work covers Linux, Windows, network security, SIEM platforms, revers
 
 ***
 
-<a class="button secondary small">Burp Suite</a><a class="button secondary small">Cobalt Strike</a><a class="button secondary small">Impacket</a><a class="button secondary small">Bloodhound</a><a class="button secondary small">NetExec</a><a class="button secondary medium">IDA Pro</a><a class="button secondary small">WinDbg</a><a class="button secondary medium">Ghidra</a><a class="button secondary small">Elastic</a>
+<p align="center"><a class="button secondary small">Burp Suite</a><a class="button primary small">Cobalt Strike</a><a class="button secondary small">Impacket</a><a class="button secondary small">Bloodhound</a><a class="button secondary small">NetExec</a><a class="button secondary small">IDA Pro</a><a class="button secondary small">WinDbg</a><a class="button secondary small">Ghidra</a><a class="button secondary small">Elastic</a></p>
 
 #### Programming & scripting
 
