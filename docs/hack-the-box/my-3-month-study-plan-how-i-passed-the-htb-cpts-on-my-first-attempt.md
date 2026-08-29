@@ -4,7 +4,7 @@ layout:
   title:
     visible: true
   description:
-    visible: true
+    visible: false
   tableOfContents:
     visible: true
   outline:
@@ -27,7 +27,7 @@ At the beginning of the month, I started one of the toughest exams I have ever t
 
 In this post, I'll explain exactly how I went from a script kiddie noob who didn't know a thing about pentesting to passing CPTS. I'll include my study timeline, a breakdown of the content you need to master, a sneak peek at important practice boxes, additional study tips, and my reflections after completing the course and exam.
 
-Feel free to check out my bio here \_ if you are interested in my credentials and check out my latest blog posting here \_ to learn more about reversing!
+Feel free to check out my bio here [about.md](../../about.md "mention") if you are interested in my credentials and check out my latest blog posting here [microcorruption](../reversing/microcorruption/ "mention")to learn more about reversing!
 
 ### Learning from Mistakes
 
@@ -43,19 +43,20 @@ With my long range goal set I now needed to make a plan. Here is where I'm going
 
 This is the study plan I would recommend if I had to prepare for CPTS again from scratch.
 
-![Three-month CPTS study plan](../../.gitbook/assets/cpts-study-plan.png)
+![Three-month CPTS study plan](<../../.gitbook/assets/ChatGPT Image Aug 28, 2026, 11_39_35 PM.png>)
 
 #### Step 1: Preparation
 
-* **Obsidian** https://obsidian.md/
+* [**Obsidian**](https://obsidian.md/)
   * Was the backbone of my note-taking process. It stores notes as Markdown files, makes it easy to organize everything into folders, supports code blocks and checklists, and can even be synced through GitHub for free. Most importantly, it gave me one place to maintain both my technical notes and my pentesting methodology.
 * Clipping Tools
-  * Markdownload https://addons.mozilla.org/en-US/firefox/addon/markdownload/
+  * [Markdownload](https://addons.mozilla.org/en-US/firefox/addon/markdownload/)
     * Saved my life. It lets you copy formatted content from webpages directly into Markdown, which made moving Academy content, commands, and code blocks into my notes significantly faster.
-  * **Greenshot** https://getgreenshot.org/
+  * [**Greenshot**](https://getgreenshot.org/)
     * A lightweight screenshot tool that makes it easy to crop images, draw boxes, add labels or comments, and blur credentials.
-* **VirtualBox** https://www.virtualbox.org/ with **Kali** https://www.kali.org/get-kali/ - I used a Kali Linux VM in VirtualBox rather than relying entirely on Pwnbox. Kali comes preloaded with most of the tools you'll need, while still giving you a persistent environment you can customize throughout your preparation. Connect it to HTB by downloading your `.ovpn` file.
-* SysReptor https://docs.sysreptor.com/setup/installation
+* [**VirtualBox**](https://www.virtualbox.org/) with [**Kali**](https://www.kali.org/get-kali/)&#x20;
+  * I used a Kali Linux VM in VirtualBox rather than relying entirely on Pwnbox. Kali comes preloaded with most of the tools you'll need, while still giving you a persistent environment you can customize throughout your preparation. Connect it to HTB by downloading your `.ovpn` file.
+* [SysReptor](https://docs.sysreptor.com/setup/installation)
   * A must-have, in my opinion. It makes building professional PDF reports significantly easier and includes templates designed specifically for HTB exams. I recommend getting comfortable with it before your exam instead of learning your reporting workflow while the clock is running.
 
 #### Step 2: The path
@@ -65,7 +66,9 @@ This is the study plan I would recommend if I had to prepare for CPTS again from
 * Methodology
   * This is where you build your methodology: a checklist of actions you can fall back on whenever you feel lost. It should give you a clear process for web, host, and Active Directory enumeration, along with privilege escalation. Don't build a giant collection of man pages. Build a decision-making tool.
 * Path
-  * embed iframe of https://academy.hackthebox.com/preview/certifications/htb-certified-penetration-testing-specialist/
+
+{% embed url="https://academy.hackthebox.com/preview/certifications/htb-certified-penetration-testing-specialist/" %}
+
 * Important Modules
   * I originally planned to list the five or ten CPTS modules I thought deserved the most attention. After looking back through the path, I honestly couldn't do it. Roughly 24 of the 28 modules contain material I would consider critical.
 
@@ -77,7 +80,7 @@ In my opinion, someone who is perfect on the learning path will still fail the e
 
 ![Official CPTS Preparation Track](../../.gitbook/assets/official-cpts-preparation-track.png)
 
-* IppSec Track https://www.youtube.com/playlist?list=PLidcsTyj9JXItWpbRtTg6aDEj10\_F17x5
+* [IppSec Track](https://www.youtube.com/playlist?list=PLidcsTyj9JXItWpbRtTg6aDEj10_F17x5)
 
 ![IppSec's Unofficial CPTS Prep playlist](../../.gitbook/assets/ippsec-cpts-prep-playlist.png)
 
@@ -92,7 +95,7 @@ In my opinion, someone who is perfect on the learning path will still fail the e
 * Approach to AEN
   * If you've read anything about CPTS preparation, you've probably heard some variation of **“do AEN blind.”** I generally agree, but I think the real value of AEN is practicing how to document your work while chaining multiple findings together to achieve an objective. If you have to follow the AEN module step-by-step to finish it, or you still don't understand what you were missing after reviewing the solution, I would be cautious about immediately scheduling the exam. Treat it similarly to the practice boxes. Give yourself several hours to work through a problem before going back to the module. If you eventually need help, that's fine but make sure you understand _why_ you were stuck.
 * SysReptor Practice
-  * You should have already set up SysReptor by this point, but if you haven't, it's not the end of the world. I HIGHLY recommend watching CyberRyan's demonstration as he walks through everything you need to practice to be able to use it for the exam reporting. https://www.youtube.com/watch?v=cQFXuMPv2KE
+  * You should have already set up SysReptor by this point, but if you haven't, it's not the end of the world. I HIGHLY recommend watching [CyberRyan's](https://www.youtube.com/watch?v=cQFXuMPv2KE) demonstration as he walks through everything you need to practice to be able to use it for the exam reporting.&#x20;
 
 #### Step 5: Exam
 
