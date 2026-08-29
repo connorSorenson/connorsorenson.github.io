@@ -27,7 +27,7 @@ At the beginning of the month, I started one of the toughest exams I have ever t
 
 In this post, I'll explain exactly how I went from a script kiddie noob who didn't know a thing about pentesting to passing CPTS. I'll include my study timeline, a breakdown of the content you need to master, a sneak peek at important practice boxes, additional study tips, and my reflections after completing the course and exam.
 
-Feel free to check out my bio here [about.md](../../about.md "mention") if you are interested in my credentials and check out my latest blog posting here [microcorruption](../reversing/microcorruption/ "mention")to learn more about reversing!
+Feel free to check out my bio here [https://connorsorenson.github.io/about/](https://connorsorenson.github.io/about/ "mention") if you are interested in my credentials and check out my latest blog posting here [microcorruption](../reversing/microcorruption/ "mention") to learn more about reversing!
 
 ### Learning from Mistakes
 
@@ -35,7 +35,7 @@ Before beginning the CPTS academy path I had relatively little cyber experience.
 
 On my first go-around, I didn't take any notes while completing the path. I simply read each module and worked through the box at the end of the section. I went through the path relatively casually and finished around late September 2025. Consequently, I failed to retain a lot of the information. I could recognize techniques when I saw them, but I struggled to recall them or differentiate between similar approaches without going back through the material. At the same time, I was learning pentesting and red teaming while preparing for several SANS certifications. Those exams, however, are much more knowledge-focused, while CPTS is a completely practical exam.
 
-At the beginning of June 2026, I set a goal to finally take CPTS and started seeking advice from coworkers and other successful CPTS holders. Two resources I found especially helpful were https://www.youtube.com/@cyberryan/videos and https://www.youtube.com/watch?v=czGXFB5xnPw
+At the beginning of June 2026, I set a goal to finally take CPTS and started seeking advice from coworkers and other successful CPTS holders. Two resources I found especially helpful were [CyberRyan](https://www.youtube.com/@cyberryan/videos) and [SchlopShow](https://www.youtube.com/watch?v=czGXFB5xnPw)
 
 With my long range goal set I now needed to make a plan. Here is where I'm going to layout for you exactly how you can prepare for the exam, and give yourself the best chance to pass. You may be an absolute genius, but I promise you: this exam is extremely difficult. For anyone reading this who disagrees, good for you, I hope one day to reach that level.
 
@@ -59,22 +59,22 @@ This is the study plan I would recommend if I had to prepare for CPTS again from
 * [SysReptor](https://docs.sysreptor.com/setup/installation)
   * A must-have, in my opinion. It makes building professional PDF reports significantly easier and includes templates designed specifically for HTB exams. I recommend getting comfortable with it before your exam instead of learning your reporting workflow while the clock is running.
 
-#### Step 2: The path
+#### Step 2: The Path
 
 * Notes
   * Take notes for **EVERY SINGLE COMMAND** on every single section. Your notes should contain more than syntax. Record what the command does, why you're running it, what you're looking for in the output, and what your next step should be based on the result.
 * Methodology
   * This is where you build your methodology: a checklist of actions you can fall back on whenever you feel lost. It should give you a clear process for web, host, and Active Directory enumeration, along with privilege escalation. Don't build a giant collection of man pages. Build a decision-making tool.
-* Path
+* Path - Important Modules
+  * I originally planned to list the five or ten CPTS modules I thought deserved the most attention. After looking back through the path, I honestly couldn't do it. Roughly 24 of the 28 modules contain material I would consider critical.
 
 {% embed url="https://academy.hackthebox.com/preview/certifications/htb-certified-penetration-testing-specialist/" %}
-
-* Important Modules
-  * I originally planned to list the five or ten CPTS modules I thought deserved the most attention. After looking back through the path, I honestly couldn't do it. Roughly 24 of the 28 modules contain material I would consider critical.
 
 #### Step 3: Boxes
 
 In my opinion, someone who is perfect on the learning path will still fail the exam in the majority of cases. I genuinely believe one of the biggest reasons I passed was that I completed roughly 95% of both the _Official CPTS Preparation Track_ and _IppSec's Unofficial CPTS Prep_ playlist.
+
+
 
 * CPTS Track
 
