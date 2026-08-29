@@ -27,7 +27,7 @@ At the beginning of the month, I started one of the toughest exams I have ever t
 
 In this post, I'll explain exactly how I went from a script kiddie noob who didn't know a thing about pentesting to passing CPTS. I'll include my study timeline, a breakdown of the content you need to master, a sneak peek at important practice boxes, additional study tips, and my reflections after completing the course and exam.
 
-Feel free to check out my bio here [https://connorsorenson.github.io/about/](https://connorsorenson.github.io/about/ "mention") if you are interested in my credentials and check out my latest blog posting here [microcorruption](../reversing/microcorruption/ "mention") to learn more about reversing!
+Feel free to check out my [bio](https://connorsorenson.github.io/about/) if you are interested in my credentials and check out my latest [blog](../reversing/microcorruption/) to learn more about reversing!
 
 ### Learning from Mistakes
 
@@ -115,4 +115,9 @@ In my opinion, someone who is perfect on the learning path will still fail the e
 * Mental Health
   * Remember to pace yourself. Keep up with the rest of your responsibilities and take breaks when you need them. CPTS preparation is a marathon, not a sprint. Consistent progress over several months will beat random bursts of 12-hour study sessions every time.
 * What's Next?
-  * Right now I'm eyeing CAPE, CRTO, or MalDev Academy. I haven't decided which one is next yet ... but this is just the beginning of my journey.
+  * Right now I'm eyeing **CAPE**, **CRTO**, or **MalDev Academy**. I haven't decided which one is next yet ... but this is just the beginning of my journey.
+
+
+
+
+
