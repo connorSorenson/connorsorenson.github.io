@@ -1,6 +1,6 @@
 ---
 layout:
-  width: wide
+  width: default
   title:
     visible: true
   description:
@@ -10,7 +10,7 @@ layout:
   outline:
     visible: true
   pagination:
-    visible: false
+    visible: true
   metadata:
     visible: true
   tags:
@@ -19,6 +19,5 @@ layout:
     visible: false
 ---
 
-# Hack the Box
+# My 3-Month Study Plan - How I Passed the HTB CPTS on My First Attempt
 
-In development
