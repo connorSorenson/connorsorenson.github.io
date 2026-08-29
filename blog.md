@@ -2,6 +2,24 @@
 description: >-
   Projects, writeups, research, and notes from things I'm currently working
   through.
+layout:
+  width: default
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+  metadata:
+    visible: true
+  tags:
+    visible: true
+  actions:
+    visible: false
 ---
 
 # Blog
