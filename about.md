@@ -138,7 +138,7 @@ offensive tooling, and programming.
 
 </div>
 
-### Tools
+## Tools
 
 <div class="tag-grid">
 <span class="tech-tag">Burp Suite</span>
@@ -229,7 +229,7 @@ GUI using Java and JavaFX.
 
 </div>
 
-### Programming &amp; Scripting
+## Programming &amp; Scripting
 
 <div class="tag-grid">
 <span class="tech-tag">C / C#</span>
