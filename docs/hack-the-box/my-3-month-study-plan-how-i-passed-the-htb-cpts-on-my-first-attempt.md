@@ -87,7 +87,7 @@ In my opinion, someone who is perfect on the learning path will still fail the e
 * Approach to Boxes
   * When working through boxes, focus on practicing your **methodology**, not just getting root. Try things. Fail. Go back through your checklist. Use your own notes before immediately turning to Google or a writeup.
   * Every few boxes, practice documenting your work in Obsidian as if you were working the exam. This prepares you for AEN and eventually for building your report in SysReptor.
-  * Set a timer when you begin and track how long each box takes. Give yourself a minimum amount of time before allowing yourself to use a writeup. The exact number of hours is up to you, but don't let “being stuck” for 20 minutes become an excuse to immediately look up the answer. I recommend using https://0xdf.gitlab.io/ writeups.
+  * Set a timer when you begin and track how long each box takes. Give yourself a minimum amount of time before allowing yourself to use a writeup. The exact number of hours is up to you, but don't let “being stuck” for 20 minutes become an excuse to immediately look up the answer. I recommend using [0xdf](https://0xdf.gitlab.io/) writeups.
   * If a box introduces a technique that wasn't taught in the course, **write it down**. Those little additions are the difference between passing and failing ;)
 
 #### Step 4: AEN
