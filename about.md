@@ -30,9 +30,11 @@ reverse engineering, and detection engineering.
 
 <section class="technical-background" aria-labelledby="technical-background-title">
 
-<div class="technical-background-copy">
-
 <h2 id="technical-background-title">Technical Background</h2>
+
+<div class="technical-background-content">
+
+<div class="technical-background-copy">
 
 <p>
 I work in cyber operations. My experience includes red team exercises, adversary
@@ -55,11 +57,9 @@ offensive tooling, and programming.
     <img class="resume-preview-image"
          src="{{ '/assets/images/resume-preview.png' | relative_url }}"
          alt="Preview of Connor Sorenson's resume">
-    <span class="resume-card-copy">
-        <strong>Resume &amp; Experience</strong>
-        <span>View on LinkedIn <span aria-hidden="true">&rarr;</span></span>
-    </span>
 </a>
+
+</div>
 
 </section>
 
