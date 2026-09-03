@@ -73,4 +73,8 @@ The site also features a leaderboard where you can see how many others where abl
 [new-orleans.md](new-orleans.md)
 {% endcontent-ref %}
 
+{% content-ref url="sydney.md" %}
+[sydney.md](sydney.md)
+{% endcontent-ref %}
+
 ... more coming soon
