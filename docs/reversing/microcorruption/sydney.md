@@ -1,3 +1,24 @@
+---
+layout:
+  width: default
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+  metadata:
+    visible: true
+  tags:
+    visible: true
+  actions:
+    visible: false
+---
+
 # Sydney
 
 An important detail to solve this level was explicitly written in **Section 1.8** of the `MSP430 Embedded Application Binary Interface` doc. The microcontroller is little-endian.
