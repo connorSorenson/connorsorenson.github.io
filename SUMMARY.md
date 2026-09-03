@@ -13,5 +13,6 @@
 * [Reversing](docs/reversing/README.md)
   * [Microcorruption](docs/reversing/microcorruption/README.md)
     * [New Orleans](docs/reversing/microcorruption/new-orleans.md)
+    * [Sydney](docs/reversing/microcorruption/sydney.md)
 * [MalDev](docs/maldev.md)
 * [Tools](docs/tools.md)
