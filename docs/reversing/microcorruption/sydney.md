@@ -25,7 +25,7 @@ An important detail to solve this level was explicitly written in **Section 1.8*
 
 ![](../../../.gitbook/assets/sydney-01.png)
 
-#### Endianness
+### Endianness
 
 [`geeksforgeeks`](https://www.geeksforgeeks.org/dsa/little-and-big-endian-mystery/) describes endianness as "the order in which bytes are arranged in memory."
 
@@ -34,7 +34,7 @@ An important detail to solve this level was explicitly written in **Section 1.8*
 
 ![source: https://bytebytego.com/guides/big-endian-vs-little-endian/](../../../.gitbook/assets/sydney-02.png)
 
-#### Analyzing Main
+### Analyzing Main
 
 First I note how in comparison to the previous challenge `New Orleans` we are missing a create\_password function. We will have to dig deeper to find how to unlock this challenge.
 
@@ -44,7 +44,7 @@ While there are some differences, the `main` logic of `New Orleans` : Where `che
 
 It looks to me like `check_password` is the next part I should investigate.
 
-#### Analyzing check\_password
+### Analyzing check\_password
 
 Immediately I notice 2 bytes of the password are each hard-coded into 4 `cmp` instructions. Together there are four separate checks on the input password, with each check only concerned with their 2 bytes.
 
@@ -78,7 +78,7 @@ From this analysis we can determine that all 4 `cmp` instructions need to pass.
 
 ![](../../../.gitbook/assets/sydney-11.png)
 
-#### Recovering the Password
+### Recovering the Password
 
 Walking through the first compare, we input the bytes with their endianness flipped when asked for the password input, and we can confirm in the `live memory dump` window. However it is not as simple as flipping the order from back to front. **Since the `cmp` instructions are only 2 bytes at a time, we need to reverse the byte order of each 2 byte increment in the password.**&#x20;
 
@@ -100,6 +100,6 @@ After debugging our answer and confirming it's success we solve the level.
 
 ![](../../../.gitbook/assets/sydney-15.png)
 
-#### Security Takeaway
+### Security Takeaway
 
 This challenge demonstrates why hard-coded passwords should not be relied upon to protect embedded devices. Even though the password is never stored as a readable string, analyzing the firmware reveals each value used by the comparison logic. Endianness and low-level implementation details may make the password less obvious, but they provide no meaningful protection against an attacker capable of reverse engineering the firmware.
