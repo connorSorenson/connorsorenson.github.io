@@ -1,3 +1,24 @@
+---
+layout:
+  width: default
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+  metadata:
+    visible: true
+  tags:
+    visible: true
+  actions:
+    visible: false
+---
+
 # Hanoi
 
 In the previous two challenges we were able to locate the password hardcoded into the program itself. In Hanoi, we begin moving away from this and into the password being analyzed offline in a Hardware Security Module (HSM). This means that to solve this level, we had to look for a vulnerability in how the program handles unlocking the door rather than simply looking for the correct password to use.
