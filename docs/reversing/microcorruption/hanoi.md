@@ -25,7 +25,7 @@ In the previous two challenges we were able to locate the password hardcoded int
 
 ![](../../../.gitbook/assets/hanoi-01.png)
 
-### Analyzing login
+## Analyzing login
 
 `main` is relatively simple in this challenge, so we immediately move into `login`.
 
@@ -35,7 +35,7 @@ As I worked through this challenge, I realized it is probably easiest to explain
 
 ![](../../../.gitbook/assets/hanoi-03.png)
 
-#### unlock\_door
+### unlock\_door
 
 We know eventually we want to reach `0x4562` to print "Access Granted" and then subsequently call the `unlock_door` function. Inspecting this function, we see:
 
@@ -51,7 +51,7 @@ We need to reach `unlock_door`, but how can we? Well if the `cmp` instruction at
 
 We need to set the `zero flag` to skip the `jnz`, but how can we?
 
-#### Never Trust, Always Verify
+### Never Trust, Always Verify
 
 In order to set the `zero flag`, the byte at the absolute memory address `&0x2410` needs to contain `0xd4`.
 
@@ -69,7 +69,7 @@ Recall from a previous post when we dived deeper into `getsn`, we found a call t
 
 Even though the string claimed the password length was capped at 16, we can give more. Always validate user input lengths because you may be able to overwrite an important location if the programmer made a mistake. In this case, they certainly did.
 
-#### Overwriting Memory
+### Overwriting Memory
 
 We should be able to write directly to `0x2410`, the exact byte needed to pass the check. To verify, I set two breakpoints in `login` at `0x453c` and `0x4548`.
 
@@ -81,7 +81,7 @@ The first breakpoint allows us to step through the call to `getsn` and examine t
 
 From here you can technically already solve the level without looking into `test_password_valid` but let's check it out anyway.
 
-#### test\_password\_valid
+### test\_password\_valid
 
 Essentially, this function updates a makeshift flag in memory after calling an offline HSM-1 to check if the password input was correct. The flag is referenced by `-0x4(r4)` and its value is moved into `r15` as we exit the function. This is important because in `login`, `r15` is compared to zero in the `tst` instruction at `0x4548`.
 
@@ -93,7 +93,7 @@ Presumably `r15` is set to 0 if the password was invalid, which causes the `jz` 
 
 Interestingly, this seems to suggest that if the correct password was entered, the `test_password_valid` would place a non-zero value into `r15`, causing the `jz` to not be taken, `0x2410` to be overwritten with the value `0xd9`, and eventually the remaining `jnz` at `0x4560` would be taken, causing the lock to never unlock. But this doesn't affect us because the wrong password is setting `r15` to 0. So we can skip over this.
 
-### Solution
+## Solution
 
 Because we determined what byte needs to be written, where it needs to be written, and how to write it there, we can successfully solve the level. Below I show how it can be solved with multiple passwords ...
 
@@ -109,6 +109,6 @@ Working with `anything as long as D4 is the 17th byte`
 
 ![](../../../.gitbook/assets/hanoi-16.png)
 
-### Security Takeaway
+## Security Takeaway
 
 Specifying maximum input lengths is an excellent practice that should be standard any time user input is handled by a program. However, this level shows that simply setting a maximum is not enough. The allowed input length must actually correspond to the size of the destination buffer. Otherwise, user input may still overwrite adjacent memory. In future challenges, we will see how a user can overwrite the saved return address and include their own malicious code to unlock the door. For now, overwriting a single byte was all that was needed.
