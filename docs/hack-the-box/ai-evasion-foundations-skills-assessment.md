@@ -1,12 +1,31 @@
-# HTB AI Evasion — Foundations Skills Assessment: Feature Obfuscation Attack
+---
+layout:
+  width: default
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+  metadata:
+    visible: true
+  tags:
+    visible: true
+  actions:
+    visible: false
+---
+
+# HTB AI Evasion - Foundations Skills Assessment: Feature Obfuscation Attack
 
 ## Background
 
 This module introduces **AI evasion attacks**, where an attacker manipulates a model’s input at inference time to influence its prediction without changing the model itself. The focus is on the **GoodWords attack**, which adds carefully selected benign tokens to shift the output of **Naive Bayes classifiers**. The module finishes with a two-phase skills assessment where I apply these techniques against two classifiers to force intentional misclassifications.
 
-todo eventually turn this into a card on gitbook: https://medium.com/@connor.sorenson2002/htb-ai-evasion-foundations-skills-assessment-feature-obfuscation-attack-bc70e53b03e4
-
-todo eventually turn this into a card on gitbook : https://github.com/connorSorenson/naivebayes\_exploit
+<table data-card-size="large" data-view="cards"><thead><tr><th></th><th data-type="content-ref"></th></tr></thead><tbody><tr><td>Check Out my Medium Article</td><td><a href="https://medium.com/@connor.sorenson2002/htb-ai-evasion-foundations-skills-assessment-feature-obfuscation-attack-bc70e53b03e4">https://medium.com/@connor.sorenson2002/htb-ai-evasion-foundations-skills-assessment-feature-obfuscation-attack-bc70e53b03e4</a></td></tr><tr><td>Github Repo</td><td><a href="https://github.com/connorSorenson/naivebayes_exploit">https://github.com/connorSorenson/naivebayes_exploit</a></td></tr></tbody></table>
 
 ## Understanding the Problem
 
@@ -179,9 +198,7 @@ print(json.dumps(response, indent=2))
 
 As you can see below the program constructs the reviews with the negative words appended to the end and successfully fools the classifier for each case.
 
-![](../../.gitbook/assets/ai-evasion-whitebox-success.png)
-
-todo add caption to image ^^" We see all 10 reviews were successfully flipped"
+![We see all 10 reviews were successfully flipped](../../.gitbook/assets/ai-evasion-whitebox-success.png)
 
 ## Blackbox - Solving the Positive Weights
 
