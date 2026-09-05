@@ -77,4 +77,8 @@ The site also features a leaderboard where you can see how many others where abl
 [sydney.md](sydney.md)
 {% endcontent-ref %}
 
+{% content-ref url="hanoi.md" %}
+[hanoi.md](hanoi.md)
+{% endcontent-ref %}
+
 ... more coming soon
