@@ -36,8 +36,12 @@ The series focuses on assembly analysis, debugging, memory inspection, and rever
 
 ### - HacktheBox
 
-Checkout my latest post!
+Checkout my latest posts!
 
 {% content-ref url="docs/hack-the-box/my-3-month-study-plan-how-i-passed-the-htb-cpts-on-my-first-attempt.md" %}
 [my-3-month-study-plan-how-i-passed-the-htb-cpts-on-my-first-attempt.md](docs/hack-the-box/my-3-month-study-plan-how-i-passed-the-htb-cpts-on-my-first-attempt.md)
+{% endcontent-ref %}
+
+{% content-ref url="docs/hack-the-box/ai-evasion-foundations-skills-assessment.md" %}
+[ai-evasion-foundations-skills-assessment.md](docs/hack-the-box/ai-evasion-foundations-skills-assessment.md)
 {% endcontent-ref %}
