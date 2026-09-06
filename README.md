@@ -1,8 +1,8 @@
 ---
 description: Cybersecurity Research, Reverse Engineering & Red Teaming
-cover: .gitbook/assets/ChatGPT Image Sep 5, 2026, 08_19_45 PM.png
+cover: .gitbook/assets/ChatGPT Image Sep 5, 2026, 10_13_54 PM.png
 coverY: 0
-coverHeight: 255
+coverHeight: 279
 layout:
   width: default
   cover:
@@ -34,6 +34,8 @@ layout:
 <p align="right">Practical research, technical notes, projects, write-ups, and hands-on labs.</p>
 
 <p align="right"> <a href="https://app.gitbook.com/s/nfvg4HLLwZ8TXAijFDY1/docs" class="button primary medium" data-icon="book-open">Explore Research -></a> <a href="docs/reversing/microcorruption/hanoi.md" class="button secondary medium" data-icon="file-lines">Latest Writeup -></a></p>
+
+<p align="right"></p>
 
 ### <mark style="color:blue;">|</mark> Featured Work
 
