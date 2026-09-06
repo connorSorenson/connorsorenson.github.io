@@ -276,11 +276,13 @@ It calculates how much more **strongly each feature is associated with the posit
 
 A useful way to think about the subtraction is that it is effectively calculating a **log-likelihood ratio**:
 
-"todo below use the math equation syntax after transitioning to gitbook logP(word∣positive)−logP(word∣negative)
+<p align="center"><span class="math">logP(word∣positive)−logP(word∣negative)</span></p>
 
 Because logarithms turn division into subtraction, this is equivalent to comparing:
 
-log(P(word∣positive)/P(word∣negative)​)"
+$$
+\log\left( \frac{P(\text{word}\mid\text{positive})}{P(\text{word} \mid \text{negative})} \right)
+$$
 
 We **have now identified** the 50 features most strongly associated with the positive class, which we can use to fool the classifier.
 
