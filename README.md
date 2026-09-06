@@ -27,13 +27,13 @@ layout:
     visible: false
 ---
 
-# ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ Connor Sorenson
+# ‎Connor Sorenson
 
-<p align="center"><mark style="color:blue;">Cybersecurity Research, Reverse Engineering &#x26; Red Teaming</mark></p>
+<p align="right"><mark style="color:blue;">Cybersecurity Research, Reverse Engineering &#x26; Red Teaming</mark></p>
 
-<p align="center">Practical research, technical notes, projects, write-ups, and hands-on labs.</p>
+<p align="right">Practical research, technical notes, projects, write-ups, and hands-on labs.</p>
 
-<p align="center"> <a href="https://app.gitbook.com/s/nfvg4HLLwZ8TXAijFDY1/docs" class="button primary medium" data-icon="book-open">Explore Research -></a> <a href="docs/reversing/microcorruption/hanoi.md" class="button secondary medium" data-icon="file-lines">Latest Writeup -></a></p>
+<p align="right"> <a href="https://app.gitbook.com/s/nfvg4HLLwZ8TXAijFDY1/docs" class="button primary medium" data-icon="book-open">Explore Research -></a> <a href="docs/reversing/microcorruption/hanoi.md" class="button secondary medium" data-icon="file-lines">Latest Writeup -></a></p>
 
 ### <mark style="color:blue;">|</mark> Featured Work
 

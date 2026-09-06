@@ -1,6 +1,6 @@
 # Table of contents
 
-* [‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ Connor Sorenson](README.md)
+* [‎Connor Sorenson](README.md)
 * [About](about.md)
 * [Blog](blog.md)
 
