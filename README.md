@@ -45,35 +45,19 @@ layout:
 
 {% tabs %}
 {% tab title="Blue Team" icon="shield" %}
-Monitoring, Detection Engineering, SIEM, EDR
-
-{% content-ref url="docs/blue-team.md" %}
-[blue-team.md](docs/blue-team.md)
-{% endcontent-ref %}
+<sub>_<mark style="color:$info;">**Monitoring, Detection Engineering, SIEM, EDR**</mark>_</sub> <a href="docs/blue-team.md" class="button secondary medium" data-icon="link">Explore -></a>
 {% endtab %}
 
 {% tab title="Red Team" icon="crosshairs-simple" %}
-Adversary Emulation, Offensive Tradecraft, Stealth
-
-{% content-ref url="docs/red-team.md" %}
-[red-team.md](docs/red-team.md)
-{% endcontent-ref %}
+<sub>_<mark style="color:$info;">**Adversary Emulation, Offensive Tradecraft, Stealth**</mark>_</sub> <a href="docs/red-team.md" class="button secondary medium" data-icon="link">Explore -></a>
 {% endtab %}
 
 {% tab title="Reversing" icon="microchip" %}
-Assembly, Firmware, Binary Analysis
-
-{% content-ref url="docs/reversing/" %}
-[reversing](docs/reversing/)
-{% endcontent-ref %}
+<sub>_<mark style="color:$info;">**Assembly, Firmware, Binary Analysis**</mark>_</sub> <a href="docs/reversing/" class="button secondary medium" data-icon="link">Explore -></a>
 {% endtab %}
 
 {% tab title="Malware Development" icon="viruses" %}
-Windows Internals, Tooling, Low-Level Development
-
-{% content-ref url="docs/maldev.md" %}
-[maldev.md](docs/maldev.md)
-{% endcontent-ref %}
+<sub>_<mark style="color:$info;">**Windows Internals, Tooling, Low-Level Development**</mark>_</sub> <a href="docs/maldev.md" class="button secondary medium" data-icon="link">Explore -></a>
 {% endtab %}
 {% endtabs %}
 
