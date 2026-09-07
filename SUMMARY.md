@@ -16,5 +16,6 @@
     * [New Orleans](docs/reversing/microcorruption/new-orleans.md)
     * [Sydney](docs/reversing/microcorruption/sydney.md)
     * [Hanoi](docs/reversing/microcorruption/hanoi.md)
+    * [Cusco](docs/reversing/microcorruption/cusco.md)
 * [MalDev](docs/maldev.md)
 * [Tools](docs/tools.md)
