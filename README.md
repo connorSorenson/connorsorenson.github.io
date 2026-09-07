@@ -1,5 +1,5 @@
 ---
-description: Cybersecurity Research, Reverse Engineering & Red Teaming
+description: Connor Sorenson
 cover: .gitbook/assets/ChatGPT Image Sep 5, 2026, 10_13_54 PM.png
 coverY: 0
 coverHeight: 279
@@ -12,7 +12,7 @@ layout:
   title:
     visible: true
   description:
-    visible: false
+    visible: true
   tableOfContents:
     visible: true
   outline:
@@ -27,7 +27,7 @@ layout:
     visible: false
 ---
 
-# ‎Connor Sorenson
+# ‎Home
 
 <p align="right"><mark style="color:blue;">Cybersecurity Research, Reverse Engineering &#x26; Red Teaming</mark></p>
 
