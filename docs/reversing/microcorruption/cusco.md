@@ -1,8 +1,31 @@
+---
+layout:
+  width: default
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+  metadata:
+    visible: true
+  tags:
+    visible: true
+  actions:
+    visible: false
+---
+
 # Cusco
+
+With the basics out of the way, **Cusco** is where the **Microcorruption** challenges start to feel a little more interesting. This one was a fun step toward thinking about program behavior from an exploit-development perspective
 
 ## Calling Conventions
 
-A **calling convention** defines how functions interact with one another, including how arguments are passed, which registers a function must preserve, how the stack is managed, and how execution returns to the caller. On the MSP430, `r1` is the stack pointer (`sp`), and the stack grows toward lower memory addresses. Registers `r4`–`r10` are generally callee-saved, meaning a function must restore them if it modifies them, while `r11`–`r15` are caller-saved and may be changed by a called function.
+A **calling convention** defines how functions interact with one another, including how arguments are passed, which registers a function must preserve, how the stack is managed, and how execution returns to the caller. On the **MSP430**, `r1` is the stack pointer (`sp`), and the stack grows toward lower memory addresses. Registers `r4`–`r10` are generally callee-saved, meaning a function must restore them if it modifies them, while `r11`–`r15` are caller-saved and may be changed by a called function.
 
 The `call` instruction also performs part of the stack management automatically. When a function is called, the processor pushes the address of the instruction immediately following the `call` onto the stack and then transfers execution to the target function. When the function later executes `ret`, that saved address is popped from the stack and loaded into the program counter, returning execution to the caller.
 
@@ -36,9 +59,7 @@ However, the oversized buffer is interesting. At `0x451a`, the call to `getsn` h
 
 This means we can write anywhere from `0x43ee` to `0x441d`. The return address for the `login` call at `0x43fe` falls in this range!
 
-![](../../../.gitbook/assets/cusco-05.png)
-
-Note for img: the green square indicates writable memory addresses
+![Green square indicates writable memory addresses](../../../.gitbook/assets/cusco-05.png)
 
 ### Simple Payload
 
@@ -56,7 +77,9 @@ Since we know the buffer begins at `0x43ee` and we know we need to place the add
 
 ![](../../../.gitbook/assets/cusco-08.jpg)
 
-Payload 1: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 28 45 Payload 2: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 46 44
+Payload 1: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 28 45&#x20;
+
+Payload 2: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 46 44
 
 Below, I used the address of the `call` instruction as the overwritten return address. In the memory window, we can see that the value at `0x43fe` is no longer `0x443c`, but our supplied value of `0x4528`.
 
