@@ -39,7 +39,7 @@ To demonstrate an example of the calling convention I discussed earlier, let's d
 
 ![](../../../.gitbook/assets/cusco-02.png)
 
-If we set a breakpoint at `0x4438`, we can debug the state of the registers before the call to `login`and also inspect the live memory dump. In the screenshot above we can look at the program counter to confirm its value`0x4438`. This is before the `call`instruction has been executed. If we look at the stack pointer we can see that it is currently set to `0x4400`.
+If we set a breakpoint at `0x4438`, we can debug the state of the registers before the call to `login` and also inspect the live memory dump. In the screenshot above we can look at the program counter to confirm its value`0x4438`. This is before the `call`instruction has been executed. If we look at the stack pointer we can see that it is currently set to `0x4400`.
 
 If we inspect the memory at this location we can see it currently holds the value `0x4031`. From the previous calling convention explanation, we know that when the `call` instruction is executed, there is an implicit `push`. The stack pointer will be decremented to `0x43fe` and the address of the next instruction after the call, `0x443c`, will be pushed onto the stack.
 
