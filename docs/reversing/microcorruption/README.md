@@ -81,4 +81,8 @@ The site also features a leaderboard where you can see how many others where abl
 [hanoi.md](hanoi.md)
 {% endcontent-ref %}
 
+{% content-ref url="cusco.md" %}
+[cusco.md](cusco.md)
+{% endcontent-ref %}
+
 ... more coming soon
