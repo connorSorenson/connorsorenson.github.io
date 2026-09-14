@@ -85,4 +85,8 @@ The site also features a leaderboard where you can see how many others where abl
 [cusco.md](cusco.md)
 {% endcontent-ref %}
 
+{% content-ref url="reykjavik.md" %}
+[reykjavik.md](reykjavik.md)
+{% endcontent-ref %}
+
 ... more coming soon

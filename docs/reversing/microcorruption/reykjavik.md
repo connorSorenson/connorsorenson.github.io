@@ -6,13 +6,17 @@ In this challenge, due to an encryption routine, we can no longer rely on our di
 
 So far in the CTF rooms, we have been relying on the disassembly window to read the instructions each lock program executes, and the debugger to watch the live memory dump and state of the registers. But what is a disassembly? A disassembler? What is the difference between assembly and disassembly?
 
-Two excellent resources which explain these concepts are https://faq.computersciencewiki.org/index.php/home/article/understanding-opcodes-operands-and-control-signals-in-cpu-instruction-execution https://cs.lmu.edu/\~ray/notes/assemdisassem/
+Two excellent resources which explain these concepts:&#x20;
+
+[Understanding Opcodes, Operands, and Control Signals](https://faq.computersciencewiki.org/index.php/home/article/understanding-opcodes-operands-and-control-signals-in-cpu-instruction-execution)
+
+[Assembly and Disassembly](https://cs.lmu.edu/~ray/notes/assemdisassem/)
 
 ![](../../../.gitbook/assets/reykjavik-01.jpg)
 
 ![](../../../.gitbook/assets/reykjavik-02.jpg)
 
-Luckily for us, `nccgroup` has provided a handy link https://microcorruption.com/assembler to both an assembler and disassembler for the `MSP430 microcontroller`.
+Luckily for us, `nccgroup` has provided a handy link [https://microcorruption.com/assembler](https://microcorruption.com/assembler) to both an assembler and disassembler for the `MSP430 microcontroller`.
 
 Let's demonstrate using them before solving the level. Take the first instruction in `main`. It is located at `0x4438`. It is encoded as the machine-code words `3e40 2045`, which disassemble to `mov #0x4520, r14`.
 
@@ -118,7 +122,7 @@ After debugging the program and reaching our breakpoint, which is set right afte
 
 We can then take the data and attempt to disassemble it.
 
-[Watch the disassembly walkthrough video](../../../.gitbook/assets/reykjavik-disassembly.mp4)
+{% embed url="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fnfvg4HLLwZ8TXAijFDY1%2Fuploads%2FCHbyRXksd6945IiyGWCe%2Fdisassemle.mp4?alt=media&token=dcd14c53-a5e5-4cde-9def-979586eb4cbd" %}
 
 Analyzing this routine line by line would also be quite tedious. I’ll start by looking for calls, jumps, and instructions associated with conditional logic, such as `cmp` and `tst`.
 
