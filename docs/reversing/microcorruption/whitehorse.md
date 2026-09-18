@@ -2,7 +2,7 @@
 
 In this challenge we practice our skills in assembling machine-code in order to introduce custom instructions not present in the binary, building payloads with padding, and calculating the return address to point to our inserted code. These are foundational exploitation concepts. Modern mitigations such as DEP and ASLR make traditional stack-based code injection significantly more difficult, but understanding these techniques is necessary before studying more advanced protections such as CFI and shadow stacks.
 
-Learn more here https://techcommunity.microsoft.com/blog/windowsosplatform/understanding-hardware-enforced-stack-protection/1247815
+Learn more from Windows here - [understanding-hardware-enforced-stack-protection](https://techcommunity.microsoft.com/blog/windowsosplatform/understanding-hardware-enforced-stack-protection/1247815)
 
 ## Analyzing `main` & `login`
 
@@ -77,17 +77,11 @@ Because the MSP430 uses little-endian byte ordering, the address `0x32ec` must a
 
 The payload would now look like this `ec32 3012 7f00 b012 3245`.
 
-![](../../../.gitbook/assets/whitehorse-09.png)
+![Payload - ret highlighted](../../../.gitbook/assets/whitehorse-09.png)
 
-caption ^^ payload with ret highlighted
+![Payload - push highlighted](../../../.gitbook/assets/whitehorse-10.png)
 
-![](../../../.gitbook/assets/whitehorse-10.png)
-
-caption payload with push highlighted
-
-![](../../../.gitbook/assets/whitehorse-11.png)
-
-caption payload with call highlighted
+![Payload - call highlighted](../../../.gitbook/assets/whitehorse-11.png)
 
 But if we were to use just `ec32 3012 7f00 b012 3245` it would be offset incorrectly. We must pad the payload to align into the correct location. The input starts at `0x32da` as identified earlier, the saved return address is at `0x32ea`; therefore the offset is `0x10` bytes; and the injected instructions begin at `0x32ec`
 

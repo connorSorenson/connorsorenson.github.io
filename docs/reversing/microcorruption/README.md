@@ -17,6 +17,8 @@ layout:
     visible: true
   actions:
     visible: false
+  anchors:
+    visible: true
 ---
 
 # Microcorruption
@@ -87,6 +89,10 @@ The site also features a leaderboard where you can see how many others where abl
 
 {% content-ref url="reykjavik.md" %}
 [reykjavik.md](reykjavik.md)
+{% endcontent-ref %}
+
+{% content-ref url="whitehorse.md" %}
+[whitehorse.md](whitehorse.md)
 {% endcontent-ref %}
 
 ... more coming soon
