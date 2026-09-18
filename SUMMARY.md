@@ -17,5 +17,6 @@
     * [Hanoi](docs/reversing/microcorruption/hanoi.md)
     * [Cusco](docs/reversing/microcorruption/cusco.md)
     * [Reykjavik](docs/reversing/microcorruption/reykjavik.md)
+    * [Whitehorse](docs/reversing/microcorruption/whitehorse.md)
 * [MalDev](docs/maldev.md)
 * [Tools](docs/tools.md)
