@@ -59,7 +59,7 @@ layout:
 {% endtab %}
 
 {% tab title="Malware Development" icon="viruses" %}
-<sub>_<mark style="color:$info;">**Windows Internals, Tooling, Low-Level Development**</mark>_</sub> <a href="docs/maldev.md" class="button secondary medium" data-icon="link">Explore -></a>
+<sub>_<mark style="color:$info;">**Windows Internals, Tooling, Low-Level Development**</mark>_</sub> <a href="docs/maldev/" class="button secondary medium" data-icon="link">Explore -></a>
 {% endtab %}
 {% endtabs %}
 

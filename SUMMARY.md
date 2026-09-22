@@ -18,5 +18,6 @@
     * [Cusco](docs/reversing/microcorruption/cusco.md)
     * [Reykjavik](docs/reversing/microcorruption/reykjavik.md)
     * [Whitehorse](docs/reversing/microcorruption/whitehorse.md)
-* [MalDev](docs/maldev.md)
+* [MalDev](docs/maldev/README.md)
+  * [Turning a C2 stager into a Windows Service Executable](docs/maldev/turning-a-c2-stager-into-a-windows-service-executable.md)
 * [Tools](docs/tools.md)
