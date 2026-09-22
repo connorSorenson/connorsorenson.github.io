@@ -23,17 +23,17 @@ layout:
 
 # MalDev
 
-**Malware Development**\
-Exploring Windows internals, execution techniques, process manipulation, and defensive detection through hands-on research.
+**Malware Development**
+
+<p align="right">Exploring Windows internals, execution techniques, process manipulation, and defensive detection through hands-on research.</p>
 
 <sup><sub><mark style="color:red;">|<mark style="color:red;"><sub></sup> Research Areas
 
 {% tabs %}
 {% tab title="Malware" icon="rectangle-terminal" %}
-* Services
-* DLLs
-* Drivers
-* Packing
+* Services, PEs, DLLs, Packing
+
+<table data-view="cards"><thead><tr><th></th><th data-hidden data-card-target data-type="content-ref"></th><th data-hidden data-card-cover data-type="image">Cover image</th></tr></thead><tbody><tr><td>Malware Page</td><td><a href="malware/">malware</a></td><td></td></tr><tr><td><mark style="color:$info;">From Stager to Service</mark></td><td><a href="malware/turning-a-c2-stager-into-a-windows-service-executable.md">turning-a-c2-stager-into-a-windows-service-executable.md</a></td><td data-object-fit="contain"><a href="../../.gitbook/assets/c2 image.png">c2 image.png</a></td></tr></tbody></table>
 {% endtab %}
 
 {% tab title="Process Injection" icon="syringe" %}
