@@ -20,9 +20,19 @@ layout:
     visible: true
   actions:
     visible: false
+  anchors:
+    visible: true
 ---
 
 # Blog
+
+### - MalDev
+
+Added some shell content to prepare for future articles / projects
+
+{% content-ref url="docs/maldev/malware/turning-a-c2-stager-into-a-windows-service-executable.md" %}
+[turning-a-c2-stager-into-a-windows-service-executable.md](docs/maldev/malware/turning-a-c2-stager-into-a-windows-service-executable.md)
+{% endcontent-ref %}
 
 ### - Microcorruption CTF
 

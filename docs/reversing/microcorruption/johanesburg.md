@@ -1,3 +1,26 @@
+---
+layout:
+  width: default
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+  metadata:
+    visible: true
+  tags:
+    visible: true
+  actions:
+    visible: false
+  anchors:
+    visible: true
+---
+
 # Johanesburg
 
 In this challenge, we continue building on the foundational skills introduced in `Whitehorse` and `Montevideo`. Again, we need to add another step to our solution. In addition to the features in our last payload, we extend the payload by including a byte to meet later conditionals, which will enable us to reach the right code branch to cause our `return address` to be read.
@@ -6,13 +29,11 @@ In this challenge, we continue building on the foundational skills introduced in
 
 `main` takes us directly into `login`. When the call is made, the return address `0x443c` is pushed onto the stack at `0x43fe`.
 
-![Screenshot 1](https://4066390816-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fnfvg4HLLwZ8TXAijFDY1%2Fuploads%2FuJz9B3ksHyP27bwjd7hp%2Fjohanesburg-01.png?alt=media)
+![](https://4066390816-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fnfvg4HLLwZ8TXAijFDY1%2Fuploads%2FuJz9B3ksHyP27bwjd7hp%2Fjohanesburg-01.png?alt=media)
 
 The `login` function calls `getsn`, allowing up to 63 characters of password input to be written to `0x2400`.
 
-![Screenshot 2](https://4066390816-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fnfvg4HLLwZ8TXAijFDY1%2Fuploads%2FhQVHak2KyUiGg0ukrtTu%2Fjohanesburg-02.png?alt=media)
-
-> Note: this is the 17th byte when counting from zero.
+![Note: this is the 17th byte when counting from zero.](https://4066390816-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fnfvg4HLLwZ8TXAijFDY1%2Fuploads%2FhQVHak2KyUiGg0ukrtTu%2Fjohanesburg-02.png?alt=media)
 
 Just like the previous level, the password is eventually written to the stack using `strcpy`. And we are able to overwrite the login return address located at `0x43fe`.
 
@@ -20,11 +41,11 @@ However, different from before, there is an instruction at `0x4578` which compar
 
 The `br` branch instruction performs an unconditional jump by loading a new address directly into the program counter. In this case, it loads `0x443c`, which is the `__stop_progExec__` routine.
 
-![Screenshot 3](https://4066390816-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fnfvg4HLLwZ8TXAijFDY1%2Fuploads%2Fe799Sd1wxKtPpi4cIOQQ%2Fjohanesburg-03.png?alt=media)
+![](https://4066390816-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fnfvg4HLLwZ8TXAijFDY1%2Fuploads%2Fe799Sd1wxKtPpi4cIOQQ%2Fjohanesburg-03.png?alt=media)
 
 This routine causes the program to stop.
 
-![Screenshot 4](https://4066390816-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fnfvg4HLLwZ8TXAijFDY1%2Fuploads%2Fs0Mpeh1vuW2Ys98Ewa15%2Fjohanesburg-04.png?alt=media)
+![](https://4066390816-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fnfvg4HLLwZ8TXAijFDY1%2Fuploads%2Fs0Mpeh1vuW2Ys98Ewa15%2Fjohanesburg-04.png?alt=media)
 
 So we know that we need to make sure the bytes match so we can reach the `ret` at the end of `login` which is what causes our payload to be executed.
 
@@ -55,7 +76,7 @@ ee43 = return address
 
 Because of the `cmp` instruction in `login` at `0x4578`, we must make sure `0x11(sp)` is equal to `0xb2`. We can confirm with some dynamic analysis, the stack pointer is pointed at our password input written to the stack with `strcpy` at the time of the `cmp`.
 
-![Screenshot 5](https://4066390816-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fnfvg4HLLwZ8TXAijFDY1%2Fuploads%2FvlwYFNx1xsuG88zTrICT%2Fjohanesburg-05.png?alt=media)
+![](https://4066390816-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fnfvg4HLLwZ8TXAijFDY1%2Fuploads%2FvlwYFNx1xsuG88zTrICT%2Fjohanesburg-05.png?alt=media)
 
 So really, this `cmp` can be evaluated as: offset `0x11` or the `17th` decimal byte of our payload must be `0xb2` to reach the necessary code branch where we return from `login`.
 
@@ -88,7 +109,7 @@ New padding = 1111 1111
 
 In the previous payload we call `0x454c` to execute the `INT` function. If we check for `INT`, the function is located in a different location in the `Johanesburg` level.
 
-![Screenshot 6](https://4066390816-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fnfvg4HLLwZ8TXAijFDY1%2Fuploads%2F919Lq9yxRI0EgBQF9Ay2%2Fjohanesburg-06.png?alt=media)
+![](https://4066390816-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fnfvg4HLLwZ8TXAijFDY1%2Fuploads%2F919Lq9yxRI0EgBQF9Ay2%2Fjohanesburg-06.png?alt=media)
 
 Since we used absolute addressing in the `call` before, we just need to adjust the address used.
 
@@ -155,12 +176,12 @@ Final Result:
 
 Testing our payload...
 
-![Screenshot 7](https://4066390816-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fnfvg4HLLwZ8TXAijFDY1%2Fuploads%2FWByN7SfYTgcvJgsG03Uz%2Fjohanesburg-07.png?alt=media)
+![](https://4066390816-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fnfvg4HLLwZ8TXAijFDY1%2Fuploads%2FWByN7SfYTgcvJgsG03Uz%2Fjohanesburg-07.png?alt=media)
 
 The payload successfully unlocks the door.
 
-![Screenshot 8](https://4066390816-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fnfvg4HLLwZ8TXAijFDY1%2Fuploads%2FuXTqqdAgfcWeLD77DACp%2Fjohanesburg-08.png?alt=media)
+![](https://4066390816-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fnfvg4HLLwZ8TXAijFDY1%2Fuploads%2FuXTqqdAgfcWeLD77DACp%2Fjohanesburg-08.png?alt=media)
 
 ### Security Takeaway
 
-Relying on arbitrary, easily visible byte comparisons such as checking if a specific byte in user input matches a hardcoded value to determine execution paths, does not constitute genuine security. When an attacker already controls the input buffer (as seen with the `strcpy` vulnerability), they can trivially embed the required bytes into their payload to bypass these validation checks and force the program down a vulnerable execution branch.
+Relying on arbitrary, easily visible byte comparisons such as checking if a specific byte in user input matches a hard-coded value to determine execution paths, does not constitute genuine security. When an attacker already controls the input buffer (as seen with the `strcpy` vulnerability), they can trivially embed the required bytes into their payload to bypass these validation checks and force the program down a vulnerable execution branch.

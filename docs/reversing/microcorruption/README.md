@@ -99,4 +99,8 @@ The site also features a leaderboard where you can see how many others where abl
 [montevideo.md](montevideo.md)
 {% endcontent-ref %}
 
+{% content-ref url="johanesburg.md" %}
+[johanesburg.md](johanesburg.md)
+{% endcontent-ref %}
+
 ... more coming soon
