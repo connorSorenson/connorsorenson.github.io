@@ -9,7 +9,7 @@
   * [My 3-Month Study Plan - How I Passed the HTB CPTS on My First Attempt](docs/hack-the-box/my-3-month-study-plan-how-i-passed-the-htb-cpts-on-my-first-attempt.md)
   * [HTB AI Evasion - Foundations Skills Assessment: Feature Obfuscation Attack](docs/hack-the-box/ai-evasion-foundations-skills-assessment.md)
 * [Blue Team](docs/blue-team/README.md)
-  * [Inside PHP2Shell (CVE-2026-109618 & CVE-2026-109619) — Primitives, Patch Analysis, and Detection Eng](docs/blue-team/inside-php2shell-cve-2026-109618-and-cve-2026-109619-primitives-patch-analysis-and-detection-eng.md)
+  * [Inside PHP2Shell (CVE-2026-109618 & CVE-2026-109619)](docs/blue-team/inside-php2shell.md)
 * [Red Team](docs/red-team.md)
 * [Reversing](docs/reversing/README.md)
   * [Microcorruption](docs/reversing/microcorruption/README.md)
