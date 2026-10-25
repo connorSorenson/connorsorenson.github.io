@@ -47,7 +47,7 @@ layout:
 
 {% tabs %}
 {% tab title="Blue Team" icon="shield" %}
-<sub>_<mark style="color:$info;">**Monitoring, Detection Engineering, SIEM, EDR**</mark>_</sub> <a href="docs/blue-team.md" class="button secondary medium" data-icon="link">Explore -></a>
+<sub>_<mark style="color:$info;">**Monitoring, Detection Engineering, SIEM, EDR**</mark>_</sub> <a href="docs/blue-team/" class="button secondary medium" data-icon="link">Explore -></a>
 {% endtab %}
 
 {% tab title="Red Team" icon="crosshairs-simple" %}
