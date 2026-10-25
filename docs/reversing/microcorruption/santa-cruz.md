@@ -1,3 +1,26 @@
+---
+layout:
+  width: default
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+  metadata:
+    visible: true
+  tags:
+    visible: true
+  actions:
+    visible: false
+  anchors:
+    visible: true
+---
+
 # Santa Cruz
 
 In this challenge we must continue extending our skills in building a custom payload by including a few different bytes to meet later conditionals, which will enable us to reach the right code branch to cause our `return address` in our payload to be read.
@@ -6,11 +29,11 @@ In this challenge we must continue extending our skills in building a custom pay
 
 After inspecting the strings section, it seems Santa Cruz implements a username as well as password. We will confirm this later in the `login` routine.
 
-![Santa Cruz main routine screenshot](../../../.gitbook/assets/santa-cruz-01.png)
+![](../../../.gitbook/assets/santa-cruz-01.png)
 
 For now let's check out `main`
 
-![Santa Cruz main routine](../../../.gitbook/assets/santa-cruz-02.png)
+![](../../../.gitbook/assets/santa-cruz-02.png)
 
 `main` adjusts the stack pointer to reserve 50 bytes, then calls `login`, writing its return address of `0x4440` to `0x43cc`.
 
@@ -31,11 +54,12 @@ The way we can convert between signed and unsigned integers, is by taking the `T
 
 With that understanding let's look at the operand from the `add` instruction in `main` at `0x4438`. The hex value `0xffce` is `65486` in decimal when unsigned. Below is the breakdown of the conversion from hex to binary, and binary to decimal.
 
-| Hex                                                                                                                                                                                                                  | F                       | F                 | C      | E     | -      |
-| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------- | ----------------- | ------ | ----- | ------ |
-| Binary                                                                                                                                                                                                               | 1111                    | 1111              | 1100   | 1110  | -      |
-| Decimal                                                                                                                                                                                                              | 32,768+16,384+8192+4096 | 2048+1024+512+256 | 128+64 | 8+4+2 | 65,486 |
-| When signed, we have to work a little differently. We take the first bit, see it's negative (set to 1) and then evaluate each of the remaining bits accordingly. I like to work backwards since it's usually faster. |                         |                   |        |       |        |
+| Hex     | F                       | F                 | C      | E     | Total  |
+| ------- | ----------------------- | ----------------- | ------ | ----- | ------ |
+| Binary  | 1111                    | 1111              | 1100   | 1110  | -      |
+| Decimal | 32,768+16,384+8192+4096 | 2048+1024+512+256 | 128+64 | 8+4+2 | 65,486 |
+
+When signed, we have to work a little differently. We take the first bit, see it's negative (set to 1) and then evaluate each of the remaining bits accordingly. I like to work backwards since it's usually faster.
 
 So I would see `ffce` and think `the sum of the turned off bits + 1`. When you do it this way there are only three turned off bits (0s) in the integer: `1100 1110`
 
@@ -43,22 +67,22 @@ Their values are 32+16+1 = 49. Then negate it with two's complement (which add t
 
 or the long way for when you need to confirm ....
 
-| F                        | F                 | C      | E     |     |
-| ------------------------ | ----------------- | ------ | ----- | --- |
-| 1111                     | 1111              | 1100   | 1110  |     |
-| -32,768+16,384+8192+4096 | 2048+1024+512+256 | 128+64 | 8+4+2 | -50 |
+| F                        | F                 | C      | E     | Total |
+| ------------------------ | ----------------- | ------ | ----- | ----- |
+| 1111                     | 1111              | 1100   | 1110  |       |
+| -32,768+16,384+8192+4096 | 2048+1024+512+256 | 128+64 | 8+4+2 | -50   |
 
 So really this `add` instruction is subtracting 50 from the stack pointer. Which makes sense because you are making room on the stack for the next function. And we all know the stack grows down ... right ... right guys?
 
 Anyways enough on that tangent, let's go check out `login`
 
-![Santa Cruz login routine](../../../.gitbook/assets/santa-cruz-03.png)
+![](../../../.gitbook/assets/santa-cruz-03.png)
 
 ## `login`
 
 This routine is probably the longest we have had to analyze yet. There does get a point where walking through every instruction is a waste of time, and it is better for an exploitation analyst to deploy a fuzzer like AFL and inspect the graph view in IDA to understand the code branches. The lines are even colored so you can see which branch is taken!
 
-![Santa Cruz login control-flow graph](../../../.gitbook/assets/santa-cruz-04.png)
+![](../../../.gitbook/assets/santa-cruz-04.png)
 
 Unfortunately, this time we will stick to the manual analysis, to build up our skills. Let's work through one piece at a time. We will be skipping over the non-critical instructions such as moving a string and then printing it to keep it as short as we can.
 
@@ -82,7 +106,7 @@ The function begins by saving some registers, saving the stack pointer, and then
 
 The old stack pointer in `r4` is indexed and used to write three values at particular offsets. By setting a breakpoint on `0x456a`, I observed `r4` to be `0x43cc`. With the value known, we can inspect the memory dump and see the values being written there.
 
-![Santa Cruz stack offsets](../../../.gitbook/assets/santa-cruz-05.png)
+![](../../../.gitbook/assets/santa-cruz-05.png)
 
 These offsets will be important later on when they are used in some future `cmp` instructions, but as we will see in a moment, the actual values can be overwritten, and are thus less important.
 
@@ -101,7 +125,7 @@ These offsets will be important later on when they are used in some future `cmp`
 
 The next part of `login` gets `0x63` or 99 characters of input from the user, and stores it at `0x2404`. Then a few instructions later, copies the input to `0x43cc - 42` = `0x43a2`. Again we must recognize `strcpy` will terminate early if the string contained a null terminator just like the last few levels, but aside from this limitation, we are able to overwrite the return address of the `login` routine. If we can also reach the return at `0x4666`, then we will gain control over the `pc` and achieve code execution.
 
-![Santa Cruz username buffer](../../../.gitbook/assets/santa-cruz-06.png)
+![username buffer](../../../.gitbook/assets/santa-cruz-06.png)
 
 Eventually, the same pattern is used to retrieve 99 characters of password input, and copy them from `0x2404` to `0x43b5`.
 
@@ -121,7 +145,7 @@ Eventually, the same pattern is used to retrieve 99 characters of password input
 
 In this sequence, the password input reuses the scratch buffer at `0x2404`. It is then copied to `0x43b5`, overwriting the corresponding portion of the username copy on the stack. The first 19 bytes, at `0x43a2–0x43b4`, remain untouched. But username bytes after the password's terminating NUL can survive, allowing us to retain the username input if needed, say for example padding and shellcode placed beyond the initial 19 bytes.
 
-![Santa Cruz password buffer](../../../.gitbook/assets/santa-cruz-07.png)
+![password buffer](../../../.gitbook/assets/santa-cruz-07.png)
 
 ```
 45d0:  0f4b           mov	r11, r15
@@ -222,7 +246,7 @@ username payload part 2
 
 The next set of instructions builds up to the final of the three checks. Before the final check a call to `INT 7D` is made, with the `username`, `password`, and `0x43a0` as a `flag` location, supplied as arguments.
 
-![Santa Cruz INT 7D call](../../../.gitbook/assets/santa-cruz-14.png)
+![](../../../.gitbook/assets/santa-cruz-14.png)
 
 The LockItPro manual lists only two parameters for `INT 7d`, but the assembly shows three pushed arguments: the username buffer pointer, the password buffer pointer, and the flag destination address.
 
@@ -309,17 +333,16 @@ So after constructing our username and password we have:
 
 ```
 username: 111111111111111111111111111111111111641111111111111111111111111111111111111111111111ce433f40ff013f8080010f12b012c446
-password: 
-222222222222222222222222222222222200
+password: 222222222222222222222222222222222200
 ```
 
 ## Solution
 
-![Santa Cruz solution screenshot one](../../../.gitbook/assets/santa-cruz-11.png)
+![](../../../.gitbook/assets/santa-cruz-11.png)
 
-![Santa Cruz solution screenshot two](../../../.gitbook/assets/santa-cruz-12.png)
+![](../../../.gitbook/assets/santa-cruz-12.png)
 
-![Santa Cruz solution screenshot three](../../../.gitbook/assets/santa-cruz-13.png)
+![](../../../.gitbook/assets/santa-cruz-13.png)
 
 ## Security Takeaway
 

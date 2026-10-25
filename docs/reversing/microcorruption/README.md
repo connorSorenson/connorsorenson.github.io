@@ -103,4 +103,8 @@ The site also features a leaderboard where you can see how many others where abl
 [johanesburg.md](johanesburg.md)
 {% endcontent-ref %}
 
+{% content-ref url="santa-cruz.md" %}
+[santa-cruz.md](santa-cruz.md)
+{% endcontent-ref %}
+
 ... more coming soon

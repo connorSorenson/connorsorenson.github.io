@@ -1,5 +1,25 @@
 ---
 description: October 25th, 2026 - Connor Sorenson
+layout:
+  width: default
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+  metadata:
+    visible: true
+  tags:
+    visible: true
+  actions:
+    visible: false
+  anchors:
+    visible: true
 ---
 
 # PHP2Shell (CVE-2026-109618 & CVE-2026-109619) - Primitives, Patch Analysis, Detection Engineering

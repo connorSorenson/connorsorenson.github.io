@@ -35,7 +35,7 @@ layout:
 {% endtab %}
 
 {% tab title="Process Injection" icon="syringe" %}
-<mark style="color:$info;">Remote Injection, APC, TLS Callbacks, Section View Mapping</mark><a href="./#process-injection" class="button secondary medium" data-icon="syringe">Explore -></a>
+<mark style="color:$info;">Remote Injection, APC, TLS Callbacks, Section View Mapping</mark><a href="process-injection.md" class="button secondary medium" data-icon="syringe">Explore -></a>
 {% endtab %}
 
 {% tab title="Evasion" icon="user-ninja" %}
