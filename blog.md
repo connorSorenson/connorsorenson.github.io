@@ -26,6 +26,14 @@ layout:
 
 # Blog
 
+### - Blue Team
+
+New analysis of the PHP2Shell critical vulnerability
+
+{% content-ref url="docs/blue-team/inside-php2shell.md" %}
+[inside-php2shell.md](docs/blue-team/inside-php2shell.md)
+{% endcontent-ref %}
+
 ### - MalDev
 
 Added some shell content to prepare for future articles / projects

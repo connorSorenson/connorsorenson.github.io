@@ -31,36 +31,25 @@ layout:
 
 {% tabs %}
 {% tab title="Malware" icon="rectangle-terminal" %}
-* Services, PEs, DLLs, Packing
-
-<table data-view="cards"><thead><tr><th></th><th data-hidden data-card-target data-type="content-ref"></th><th data-hidden data-card-cover data-type="image">Cover image</th></tr></thead><tbody><tr><td>Malware Page</td><td><a href="malware/">malware</a></td><td></td></tr><tr><td><mark style="color:$info;">From Stager to Service</mark></td><td><a href="malware/turning-a-c2-stager-into-a-windows-service-executable.md">turning-a-c2-stager-into-a-windows-service-executable.md</a></td><td data-object-fit="contain"><a href="../../.gitbook/assets/c2 image.png">c2 image.png</a></td></tr></tbody></table>
+<mark style="color:$info;">Services, PEs, DLLs, Packing and more!</mark> <a href="malware/" class="button secondary medium" data-icon="bug">Explore -></a>
 {% endtab %}
 
 {% tab title="Process Injection" icon="syringe" %}
-* Remote Injection (DLL / PE / Raw Shellcode)
-* Thread Execution Hijacking
-* APC
-* TLS Callbacks
-* Section View Mapping
-* Process Hollowing
-* Reflective
+<mark style="color:$info;">Remote Injection, APC, TLS Callbacks, Section View Mapping</mark><a href="./#process-injection" class="button secondary medium" data-icon="syringe">Explore -></a>
 {% endtab %}
 
 {% tab title="Evasion" icon="user-ninja" %}
-* Unhooking
-* Syscalls
-* ETW-TI
-* Kernel
-  * Minifilters
-  * Callbacks
+<mark style="color:$info;">Usermode (Unhooking, syscalls, file attributes, ROP chains)</mark>&#x20;
+
+<mark style="color:$info;">Kernel (Minifilters, Callback Objects, UEFI Boot/Root-Kits)</mark><a href="evasion.md" class="button secondary medium" data-icon="popcorn">Explore -></a>
 {% endtab %}
 
 {% tab title="Internals" icon="diagram-next" %}
-* Reflective Loading
-* Attribute List
-* PEB / TEB
-  * EPROCESS / ETHREAD
-* PE Format
+<mark style="color:$info;">File Format, Data Structures, CFI/CET, Shadow Stacks</mark> <a href="internals.md" class="button secondary medium" data-icon="gear-code">Explore -></a>
+{% endtab %}
+
+{% tab title="API Space" %}
+<mark style="color:$info;">Open/Create, Transfer Code, Execute Code</mark> <a href="./" class="button secondary medium" data-icon="rectangle-api">Explore -></a>
 {% endtab %}
 {% endtabs %}
 
