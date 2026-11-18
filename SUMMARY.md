@@ -22,6 +22,7 @@
     * [Montevideo](docs/reversing/microcorruption/montevideo.md)
     * [Johanesburg](docs/reversing/microcorruption/johanesburg.md)
     * [Santa Cruz](docs/reversing/microcorruption/santa-cruz.md)
+  * [66 Questions, Zero Wrong Answers - How I got 100% on GREM](docs/reversing/66-questions-zero-wrong-answers-how-i-got-100-on-grem.md)
 * [MalDev](docs/maldev/README.md)
   * [Malware](docs/maldev/malware/README.md)
     * [Turning a C2 stager into a Windows Service Executable](docs/maldev/malware/turning-a-c2-stager-into-a-windows-service-executable.md)
