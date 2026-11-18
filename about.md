@@ -83,6 +83,17 @@ offensive tooling, and programming.
 
 <div class="cert-card">
     <div class="cert-info">
+        <strong>GREM</strong>
+        <span>GIAC Reverse Engineering Malware</span>
+    </div>
+    <img
+        class="cert-logo"
+        src="{{ '/assets/images/grem.jpg' | relative_url }}"
+        alt="GIAC Reverse Engineering Malware badge">
+</div>
+
+<div class="cert-card">
+    <div class="cert-info">
         <strong>CPTS</strong>
         <span>Hack The Box Certified Penetration Testing Specialist</span>
     </div>
@@ -170,6 +181,7 @@ offensive tooling, and programming.
 <span class="tech-tag">nxc</span>
 <span class="tech-tag">IDA Pro</span>
 <span class="tech-tag">WinDbg</span>
+<span class="tech-tag">x64dbg</span>
 <span class="tech-tag">Ghidra</span>
 <span class="tech-tag">Elastic</span>
 </div>
@@ -254,8 +266,9 @@ GUI using Java and JavaFX.
 ## Programming &amp; Scripting
 
 <div class="tag-grid">
-<span class="tech-tag">C / C#</span>
+<span class="tech-tag">C</span>
 <span class="tech-tag">C++</span>
+<span class="tech-tag">C#</span>
 <span class="tech-tag">Java</span>
 <span class="tech-tag">x86/x64 Assembly</span>
 <span class="tech-tag">PowerShell</span>
