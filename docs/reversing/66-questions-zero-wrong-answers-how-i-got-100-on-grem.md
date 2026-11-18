@@ -72,4 +72,6 @@ I follow the typical SANS index format for the most part, using a page, term, an
 
 When it comes to SANS courses / GIAC certifications, I strongly believe the content is almost always generally simple enough to understand on the first pass, and with my existing reversing background, I found much of the material approachable on the first pass. The second pass was where I consolidated that understanding: I worked through each book carefully, built my index, and connected related concepts through cross-references.
 
-{% embed url="https://www.credly.com/badges/eb7de098-e48c-44de-a09d-c77c62ea45ce/public_url" %}
+{% hint style="info" %}
+[Credly Badge](https://www.credly.com/badges/eb7de098-e48c-44de-a09d-c77c62ea45ce/public_url)
+{% endhint %}
