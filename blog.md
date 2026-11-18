@@ -42,7 +42,13 @@ Added some shell content to prepare for future articles / projects
 [turning-a-c2-stager-into-a-windows-service-executable.md](docs/maldev/malware/turning-a-c2-stager-into-a-windows-service-executable.md)
 {% endcontent-ref %}
 
-### - Microcorruption CTF
+### - Reversing
+
+See my take on GREM
+
+{% content-ref url="docs/reversing/66-questions-zero-wrong-answers-how-i-got-100-on-grem.md" %}
+[66-questions-zero-wrong-answers-how-i-got-100-on-grem.md](docs/reversing/66-questions-zero-wrong-answers-how-i-got-100-on-grem.md)
+{% endcontent-ref %}
 
 I'm working through the Microcorruption embedded security CTF and documenting each challenge as I solve it.
 

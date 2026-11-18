@@ -25,4 +25,5 @@ layout:
 
 <i class="fa-pipe" style="color:$info;">:pipe:</i> Reverse engineering notes, binary analysis, debugging, and CTF write-ups.&#x20;
 
-<table data-view="cards"><thead><tr><th></th><th data-hidden data-card-cover data-type="image">Cover image</th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td>Microcorruption</td><td data-object-fit="contain"><a href="../../.gitbook/assets/progress-map.png">progress-map.png</a></td><td><a href="microcorruption/">microcorruption</a></td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th></th><th data-hidden data-card-cover data-type="image">Cover image</th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td>Microcorruption</td><td data-object-fit="contain"><a href="../../.gitbook/assets/progress-map.png">progress-map.png</a></td><td><a href="microcorruption/">microcorruption</a></td></tr><tr><td><sub>I STUDIED MALWARE FOR 3 WEEKS AND THIS HAPPENED… 😱</sub></td><td data-object-fit="contain"><a href="../../.gitbook/assets/grem.jpg">grem.jpg</a></td><td><a href="66-questions-zero-wrong-answers-how-i-got-100-on-grem.md">66-questions-zero-wrong-answers-how-i-got-100-on-grem.md</a></td></tr></tbody></table>
+

@@ -8,19 +8,19 @@ In this article, I’ll cover my background going into the course, my experience
 
 ## **My Starting Point**
 
-Before taking `FOR610` I had some experience reversing `32-bit Windows Portable Executables (PE)` and reversing `16-bit RISC MSP430 binaries`. However, I had limited exposure to self-defending / anti-analysis malware samples, especially `.NET` and multi-technology malware.
+Before taking `FOR610` I had some experience reversing `32-bit` Windows Portable Executables (PE) and reversing `16-bit` RISC MSP430 binaries. However, I had limited exposure to self-defending / anti-analysis malware samples, especially `.NET` and multi-technology malware.
 
-Most of my previous experience involved using `PeStudio` and `IDA Pro`, but `FOR610` gave me a chance to practice in `Ghidra` and I plan to write some `java`/`python` scripts to extend its functionality with `MSP430 Microcontrollers`.
+Most of my previous experience involved using `PeStudio` and `IDA Pro`, but `FOR610` gave me a chance to practice in `Ghidra` and I plan to write some `java`/`python` scripts to extend its functionality with `MSP430` Microcontrollers.
 
 ## Why I Pursued GREM
 
 Simple, a friend once asked me, "Do you want to be ordinary, or do you want to be exceptional?"
 
-In the field of red teaming, there is no room for complacency. I'm driven by a desire to continuously build upon my skills and improve my abilities to produce the best work I can. I want to contribute something new to the field; A novel reflective loading technique, an evasive C2 stager, a universal `CET/CFI` `COOP` bypass. Earning `GREM`, was just another step on that journey.
+In the field of red teaming, there is no room for complacency. I'm driven by a desire to continuously build upon my skills and improve my abilities to produce the best work I can. I want to contribute original research to the field; A novel reflective loading technique, an evasive C2 stager, an improvement to `CET`/`CFI` Counterfeit Object-Oriented Programming bypass. Earning `GREM`, was just another step on that journey.
 
 ## **My Score and My FOR610 experience**
 
-![GREM exam summary showing 66 questions answered and a score of 100%](../../.gitbook/assets/grem-exam-score.png)
+![](../../.gitbook/assets/grem-exam-score.png)
 
 The five main subject areas I studied were:
 
